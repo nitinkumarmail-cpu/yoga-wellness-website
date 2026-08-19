@@ -1,0 +1,17 @@
+{
+  "name": "Centre for Integrative Wellness",
+  "short_name": "CFIW",
+  "description": "Personalised yoga, mindful movement, breathwork and integrative wellness for individuals and organisations.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8f5ed",
+  "theme_color": "#173f2c",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
