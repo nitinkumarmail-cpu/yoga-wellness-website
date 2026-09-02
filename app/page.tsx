@@ -51,15 +51,16 @@ export default function Home() {
           <div className="hero-copy">
             <p className="eyebrow">Creating health. Living better.</p>
             <h1 className="display">
-              Personalised wellness for your body, mind & life
+              Welcome to the Centre for Integrative Wellness.
             </h1>
             <p className="lede">
-              Thoughtful yoga, movement, breathwork and mindfulness, designed
-              around who you are, how you live and where you want to begin.
+              CFIW is an emerging wellness organisation founded on the belief
+              that health should be actively cultivated.
             </p>
             <p className="lede">
-              Build resilience, restore function and develop healthier ways of
-              living through a personalised, preventive approach.
+              We believe that true health extends beyond the absence of disease.
+              It is the ability to move with confidence, breathe with awareness,
+              think with clarity, and live with purpose.
             </p>
             <div className="hero-actions">
               <Link className="btn btn-primary" href="/book">
@@ -95,30 +96,6 @@ export default function Home() {
           <HeartHandshake /> Holistic well-being
         </div>
       </div>
-      <section className="welcome-strip">
-        <div className="container welcome-grid">
-          <div>
-            <p className="eyebrow">Welcome</p>
-            <h2 className="title" style={{ fontSize: "clamp(2.3rem,4vw,4rem)" }}>
-              Welcome to the Centre for Integrative Wellness
-            </h2>
-            <p className="lede">
-              CFIW is an emerging wellness organisation founded on the belief
-              that health should be actively cultivated.
-            </p>
-          </div>
-          <div>
-            <p className="lede">
-              True health extends beyond the absence of disease. It includes
-              moving with confidence, breathing with awareness, thinking with
-              clarity and living with purpose.
-            </p>
-            <Link className="text-link" href="/what-is-cfiw">
-              What is CFIW? <ArrowRight size={15} />
-            </Link>
-          </div>
-        </div>
-      </section>
       <section className="section">
         <div className="container">
           <SectionHeading
