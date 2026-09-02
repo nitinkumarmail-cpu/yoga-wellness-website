@@ -9,34 +9,69 @@ export default function Page() {
     <>
       <ContentPage
         eyebrow="Personal wellness"
-        title="A practice made personal"
-        intro="Private guidance that considers your experience, mobility, lifestyle, goals and preferences from the first conversation onward."
+        title="Wellness designed around you"
+        intro="You may want to feel fitter, stronger, more flexible, calmer or simply better in your body. We listen to that goal, then take time to understand how you move, breathe, recover and live each day."
         blocks={[
           {
-            title: "One-to-One Wellness",
-            text: "There is no assumed starting point. Sessions are designed around the person you are today and adjusted through observation, conversation and regular review.",
+            title: "Why CFIW",
+            text: "What you want and what your body needs may not always be the same. Greater flexibility may require more stability. A fitness goal may need to account for years of sitting, changing routines or reduced movement confidence. There is no standard prescription. We understand where you are first, then decide how we can help you move forward.",
             items: [
-              "Individual attention",
-              "Flexible scheduling",
-              "Online or in person",
+              "Listen",
+              "Assess",
+              "Personalise",
+              "Practise",
+              "Progress",
             ],
           },
           {
-            title: "What to Expect",
-            text: "A simple process keeps the experience clear and collaborative.",
+            title: "What Can We Work On Together?",
+            text: "Your programme may have one clear goal or bring several aspects of well-being together.",
             items: [
-              "01. Initial consultation",
-              "02. Understand goals & lifestyle",
-              "03. Create a personal plan",
-              "04. Guided sessions",
-              "05. Review & progression",
+              "Strength & fitness",
+              "Mobility & flexibility",
+              "Posture & movement",
+              "Balance & stability",
+              "Breath & energy",
+              "Stress & recovery",
+              "Meditation & mindfulness",
+              "Healthy ageing",
+              "Everyday well-being",
+            ],
+          },
+          {
+            title: "How We Practise",
+            text: "Traditional foundations meet personal application. Your practice may bring together Classical Hatha Yoga, dynamic movement and flow, pranayama and dhyaan, restorative practices, relaxation and quiet observation. The practice can change as you change.",
+            items: [
+              "Classical Hatha Yoga",
+              "Dynamic Yoga & Flow",
+              "Pranayama & Dhyaan",
+              "Restorative & Relaxation Practices",
+            ],
+          },
+          {
+            title: "Your Wellness, Your Way",
+            text: "Life does not always fit neatly around a wellness schedule, so CFIW offers flexible ways to practise across different ages and stages of life.",
+            items: [
+              "One-to-one private wellness",
+              "Couple & family wellness",
+              "Private small groups",
+              "Online wellness",
+            ],
+          },
+          {
+            title: "The CFIW Difference",
+            text: "We do not begin by asking which yoga style you want. We begin with you: where you are today, how your body feels, what everyday life demands, and where you would like to be. Then we build the practice around those answers. Our aim is to help you live better in your body.",
+            items: [
+              "Better movement",
+              "Better fitness",
+              "Better health awareness",
             ],
           },
         ]}
       />
       <section className="section">
         <div className="container">
-          <h2 className="title">Programmes</h2>
+          <h2 className="title">Programs</h2>
           <div className="grid3">
             {programmes.map((p) => (
               <article className="card" key={p.slug}>

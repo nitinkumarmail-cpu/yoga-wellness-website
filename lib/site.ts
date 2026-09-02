@@ -4,7 +4,7 @@ export const site = {
   tagline: "Creating health. Living better.",
   description:
     "Personalised yoga, mindful movement, breathwork and integrative wellness for individuals and organisations.",
-  url: "https://example.com",
+  url: "https://cfiw-wellness-review.nk2314.chatgpt.site",
   phone: "+91 9650496333",
   whatsapp: "919650496333",
   email: "hello@cfiw.example",
@@ -22,6 +22,7 @@ export const nav = [
     label: "About CFIW",
     href: "/about",
     children: [
+      ["What is CFIW?", "/what-is-cfiw"],
       ["Our Story", "/about#our-story"],
       ["Our Approach", "/about#our-approach"],
       ["Vision & Mission", "/about#vision--mission"],
@@ -34,7 +35,8 @@ export const nav = [
     children: [
       ["Work Overview", "/our-work"],
       ["Wellness", "/our-work#wellness"],
-      ["Therapeutic Wellness", "/our-work#therapeutic-wellness"],
+      ["Therapeutic Wellness", "/therapeutic-wellness"],
+      ["Hospitals & Healthcare", "/healthcare-wellness"],
       ["Education & Capacity Building", "/our-work#education--capacity-building"],
     ],
   },
@@ -57,7 +59,7 @@ export const nav = [
     children: [
       ["Partnership Overview", "/collaborate"],
       ["Corporate Wellness", "/corporate-wellness"],
-      ["Hospitals & Healthcare", "/collaborate#hospitals--healthcare"],
+      ["Hospitals & Healthcare", "/healthcare-wellness"],
       ["Schools & Institutions", "/collaborate#schools--institutions"],
       ["NGOs & Communities", "/collaborate#ngos--communities"],
     ],

@@ -4,8 +4,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     "",
     "/about",
+    "/what-is-cfiw",
     "/founder",
     "/our-work",
+    "/therapeutic-wellness",
+    "/healthcare-wellness",
     "/personal-wellness",
     "/programmes",
     "/collaborate",

@@ -9,39 +9,48 @@ export default function Page() {
   return (
     <ContentPage
       eyebrow="About CFIW"
-      title="Wellness understood as a whole"
-      intro="CFIW was created to make yoga and well-being more personal, practical and responsive to the lives people actually lead."
+      title="Health should be created, not simply restored"
+      intro="CFIW was created to make yoga and well-being personal, practical and responsive to the lives people actually lead."
       blocks={[
         {
           title: "Our Story",
-          text: "The Centre for Integrative Wellness began with a simple observation: lasting practices grow from attention, not prescription. CFIW creates room to listen, explore and build a relationship with movement, breath and awareness.",
+          text: "The Centre for Integrative Wellness grew from years of working with corporate professionals, healthcare settings, expatriate communities, educators, senior citizens and individuals seeking healthier, more balanced lives. Across these different settings, the same challenges appeared: long working hours, physical inactivity, chronic stress, poor sleep, persistent discomfort and very little time to understand the body. CFIW brings timeless yogic wisdom into conversation with anatomy, physiology, movement science and preventive healthcare so that creating health becomes practical and relevant to modern life.",
         },
         {
           title: "Our Approach",
-          text: "We begin with the person or community in front of us. Experience, mobility, routine, environment and intention inform how each programme is shaped and how it evolves.",
+          text: "Our work begins by listening. We understand the individual, organisation or community, review the factors influencing well-being, and shape a programme around real needs, abilities, health context and goals. Movement, breathing, sleep, nutrition, behaviour and environment are understood as connected parts of one living system.",
+          items: [
+            "Understand",
+            "Assess",
+            "Personalise",
+            "Guide",
+            "Create health",
+          ],
         },
         {
           title: "Integrative Wellness",
-          text: "Movement, breathing, mindful attention, rest and everyday choices affect one another. Our work connects these elements in ways that are clear, realistic and appropriate.",
+          text: "Integrative wellness is a person-centred and evidence-informed approach that recognises the interaction between biological, psychological, behavioural, social and environmental factors. At CFIW, contemporary health understanding is combined with Yoga Science, mindful movement, breath, relaxation and lifestyle education to support prevention, participation, recovery and quality of life.",
         },
         {
           title: "Salutogenesis & Preventive Wellness",
-          text: "Salutogenesis asks what helps people move towards health and well-being. At CFIW, it means supporting useful habits, awareness and personal resources. Our programmes complement, not replace, medical advice, diagnosis or treatment.",
+          text: "Salutogenesis asks a different question: what creates health? This health-promoting philosophy guides us to strengthen a person's capacity to adapt, recover and thrive through movement, breath, mindful living, education and supportive environments. CFIW programmes complement, and do not replace, medical advice, diagnosis or treatment.",
         },
         {
           title: "Vision & Mission",
-          text: "Our vision is a culture in which well-being feels understandable and accessible. Our mission is to offer thoughtful teaching and responsible partnerships that help people participate actively in their own wellness.",
+          text: "Our vision is a healthier society where well-being is accessible, inclusive and integrated into everyday life. Our mission is to bridge traditional yogic wisdom with contemporary health understanding through evidence-informed yoga, therapeutic movement, breathwork, mindfulness, lifestyle education and preventive wellness. We bring this work into the spaces where people live, work, learn, heal and connect.",
         },
         {
           title: "Our Values",
-          text: "Care, individual dignity, thoughtful evidence, accessibility, integrity and sustainable progress guide every interaction.",
+          text: "Care, dignity and thoughtful practice guide every interaction.",
           items: [
-            "Listen before designing",
-            "Teach without judgement",
-            "Respect individual context",
-            "Make progress sustainable",
-            "Collaborate responsibly",
-            "Communicate with clarity",
+            "Prevention first",
+            "Compassion",
+            "Integrity",
+            "Evidence-informed practice",
+            "Inclusivity",
+            "Lifelong learning",
+            "Community well-being",
+            "Respect for individual needs",
           ],
         },
       ]}

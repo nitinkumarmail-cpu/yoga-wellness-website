@@ -16,7 +16,7 @@ export default function Page() {
           },
           {
             title: "Hospitals & Healthcare",
-            text: "Collaborative wellness experiences for appropriate settings, developed with stakeholder input. CFIW programmes are supportive and educational; they do not replace clinical care.",
+            text: "Collaborative yoga and wellness programmes for patients and healthcare staff, developed with clinical stakeholders and clear professional boundaries. CFIW complements, and does not replace, clinical care.",
           },
           {
             title: "Schools & Institutions",

@@ -4,16 +4,18 @@ const cols = [
   {
     h: "About",
     l: [
-      ["Our story", "/about"],
-      ["Our approach", "/about#approach"],
+      ["What is CFIW?", "/what-is-cfiw"],
+      ["Our story", "/about#our-story"],
+      ["Our approach", "/about#our-approach"],
       ["Founder", "/founder"],
     ],
   },
   {
-    h: "Personal wellness",
+    h: "Programs",
     l: [
       ["Personal yoga", "/personal-wellness"],
-      ["Programmes", "/programmes"],
+      ["All programs", "/programmes"],
+      ["Therapeutic wellness", "/therapeutic-wellness"],
       ["Meditation", "/programmes#meditation"],
       ["Breathwork", "/programmes#breathwork"],
     ],
@@ -22,8 +24,8 @@ const cols = [
     h: "Collaborate",
     l: [
       ["Corporate wellness", "/corporate-wellness"],
-      ["Institutions", "/collaborate#institutions"],
-      ["Partnerships", "/collaborate#process"],
+      ["Hospitals & healthcare", "/healthcare-wellness"],
+      ["Partnerships", "/collaborate#partnerships-process"],
     ],
   },
   {

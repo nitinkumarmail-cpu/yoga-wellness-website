@@ -24,10 +24,16 @@ export const metadata: Metadata = {
   },
   description: site.description,
   openGraph: {
-    title: site.fullName,
+    title: `${site.fullName} | Creating Health. Living Better.`,
     description: site.description,
     type: "website",
-    images: ["/images/hero-wellness.png"],
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "CFIW, Creating Health. Living Better." }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${site.fullName} | Creating Health. Living Better.`,
+    description: site.description,
+    images: ["/og.png"],
   },
   robots: { index: true, follow: true },
 };

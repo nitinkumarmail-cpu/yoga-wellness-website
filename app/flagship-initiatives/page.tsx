@@ -14,7 +14,7 @@ export default function Page() {
           <ImageCard
             title="Project SAANIDHYA"
             tag="Featured initiative"
-            text="Healthy ageing through movement, breath and meaningful community connection."
+            text="A little more care and connection through gentle movement, breath and companionship for elders."
             href="/flagship-initiatives/project-saanidhya"
           />
           <ImageCard

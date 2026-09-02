@@ -12,24 +12,24 @@ import { resources } from "@/lib/site";
 const work = [
   {
     title: "Personal Wellness",
-    text: "One-to-one programmes designed around your goals, lifestyle and everyday needs.",
+    text: "Personalised pathways that support movement, strength, balance and healthier everyday living.",
     href: "/personal-wellness",
   },
   {
     title: "Corporate Wellness",
-    text: "Practical movement and mindfulness experiences created for modern teams.",
+    text: "Human, adaptable programmes for healthier people, stronger teams and better workplaces.",
     href: "/corporate-wellness",
     image: "/images/corporate-wellness.png",
   },
   {
     title: "Hospitals & Healthcare",
-    text: "Carefully scoped collaborations that complement professional care environments.",
-    href: "/collaborate#healthcare",
+    text: "Responsible yoga and wellness collaborations that complement professional care.",
+    href: "/healthcare-wellness",
     image: "/images/corporate-wellness.png",
   },
   {
     title: "Project SAANIDHYA",
-    text: "Healthy ageing through movement, breath and meaningful community connection.",
+    text: "A little more care and connection through movement, breath and companionship for elders.",
     href: "/flagship-initiatives/project-saanidhya",
   },
 ];
@@ -46,6 +46,10 @@ export default function Home() {
             <p className="lede">
               Thoughtful yoga, movement, breathwork and mindfulness, designed
               around who you are, how you live and where you want to begin.
+            </p>
+            <p className="lede">
+              Build resilience, restore function and develop healthier ways of
+              living through a personalised, preventive approach.
             </p>
             <div className="hero-actions">
               <Link className="btn btn-primary" href="/book">
@@ -81,6 +85,26 @@ export default function Home() {
           <HeartHandshake /> Holistic well-being
         </div>
       </div>
+      <section className="welcome-strip">
+        <div className="container welcome-grid">
+          <div>
+            <p className="eyebrow">Welcome to CFIW</p>
+            <h2 className="title" style={{ fontSize: "clamp(2.3rem,4vw,4rem)" }}>
+              Health is something we actively cultivate.
+            </h2>
+          </div>
+          <div>
+            <p className="lede">
+              True health extends beyond the absence of disease. It includes
+              moving with confidence, breathing with awareness, thinking with
+              clarity and living with purpose.
+            </p>
+            <Link className="text-link" href="/what-is-cfiw">
+              What is CFIW? <ArrowRight size={15} />
+            </Link>
+          </div>
+        </div>
+      </section>
       <section className="section">
         <div className="container">
           <SectionHeading
@@ -89,7 +113,7 @@ export default function Home() {
             title="Work with us"
             text="Personalised wellness and collaborative programmes for individuals, communities and organisations."
           />
-          <div className="grid3" style={{ marginTop: 44 }}>
+          <div className="work-grid" style={{ marginTop: 44 }}>
             {work.map((x) => (
               <ImageCard key={x.title} {...x} />
             ))}
@@ -111,12 +135,12 @@ export default function Home() {
           </p>
           <h2 className="title">Rooted in tradition. Guided by science.</h2>
           <p className="lede">
-            We bring enduring yogic principles into conversation with
-            contemporary understandings of movement, behaviour and modern life.
-            The result is practical, attentive and never one-size-fits-all.
+            We bring enduring yogic principles into conversation with anatomy,
+            physiology, movement science, behaviour and modern life. The result
+            is person-centred, preventive, practical and never one-size-fits-all.
           </p>
           <Link
-            href="/about#approach"
+            href="/about#our-approach"
             className="btn btn-light"
             style={{ alignSelf: "flex-start" }}
           >
@@ -158,16 +182,16 @@ export default function Home() {
           <SectionHeading
             eyebrow="Personal wellness"
             title="Yoga designed around you"
-            text="Your experience, movement, schedule and preferences shape the practice, not the other way around."
+            text="Your body does not exist separately from your work, sleep, stress, habits, age or lifestyle. We understand where you are, then build the practice around you."
           />
           <div className="grid3" style={{ marginTop: 35 }}>
             {[
               "Individual attention",
-              "Personalised progression",
-              "Flexible formats",
-              "Beginner-friendly",
-              "Adaptable practice",
-              "Sustainable routines",
+              "Strength & fitness",
+              "Mobility & flexibility",
+              "Breath & energy",
+              "Stress & recovery",
+              "Healthy ageing",
             ].map((x) => (
               <div className="card" key={x}>
                 <h3 style={{ fontSize: "1.35rem" }}>{x}</h3>
@@ -188,14 +212,15 @@ export default function Home() {
           <SectionHeading
             center
             eyebrow="A thoughtful beginning"
-            title="How it works"
+            title="Every journey begins with understanding"
           />
           <div className="steps" style={{ marginTop: 40 }}>
             {[
-              ["01", "Connect", "Tell us about yourself."],
-              ["02", "Understand", "Discuss goals, lifestyle and preferences."],
-              ["03", "Personalise", "Shape an appropriate programme."],
-              ["04", "Practice", "Begin, review and adapt as you progress."],
+              ["01", "Understand", "Listen to the person, organisation or community."],
+              ["02", "Assess", "Explore movement, lifestyle, function and needs."],
+              ["03", "Personalise", "Shape the programme around ability and context."],
+              ["04", "Guide", "Practise with education, care and clear options."],
+              ["05", "Create Health", "Build awareness and habits for lifelong well-being."],
             ].map(([n, t, d]) => (
               <div className="step" key={n}>
                 <b>{n}</b>
@@ -222,10 +247,11 @@ export default function Home() {
             <p className="eyebrow" style={{ color: "#bfd2c3" }}>
               Wellness at work
             </p>
-            <h2 className="title">Programmes made for real working lives.</h2>
+            <h2 className="title">Healthier people. Stronger teams. Better workplaces.</h2>
             <p className="lede">
-              Customised movement, yoga, breath and mindfulness experiences that
-              respect your people, culture and workplace context.
+              Thoughtful wellness experiences that bring together yoga,
+              therapeutic movement, breathwork, meditation, lifestyle education
+              and human connection.
             </p>
             <Link
               href="/corporate-wellness"
