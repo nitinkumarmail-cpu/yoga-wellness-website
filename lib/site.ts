@@ -18,13 +18,81 @@ export const site = {
 } as const;
 
 export const nav = [
-  ["About CFIW", "/about"],
-  ["Our Work", "/our-work"],
-  ["Personal Wellness", "/personal-wellness"],
-  ["Collaborate", "/collaborate"],
-  ["Flagship Initiatives", "/flagship-initiatives"],
-  ["Resources", "/resources"],
-  ["Contact", "/contact"],
+  {
+    label: "About CFIW",
+    href: "/about",
+    children: [
+      ["Our Story", "/about#our-story"],
+      ["Our Approach", "/about#our-approach"],
+      ["Vision & Mission", "/about#vision--mission"],
+      ["Founder & Lineage", "/founder"],
+    ],
+  },
+  {
+    label: "Our Work",
+    href: "/our-work",
+    children: [
+      ["Work Overview", "/our-work"],
+      ["Wellness", "/our-work#wellness"],
+      ["Therapeutic Wellness", "/our-work#therapeutic-wellness"],
+      ["Education & Capacity Building", "/our-work#education--capacity-building"],
+    ],
+  },
+  {
+    label: "Programs",
+    href: "/programmes",
+    children: [
+      ["All Programs", "/programmes"],
+      ["Personal Wellness", "/personal-wellness"],
+      ["Personal Yoga", "/programmes#personal-yoga"],
+      ["Mobility & Flexibility", "/programmes#mobility-flexibility"],
+      ["Meditation & Breathwork", "/programmes#meditation"],
+      ["Senior Wellness", "/programmes#senior-wellness"],
+      ["Online Yoga", "/programmes#online-yoga"],
+    ],
+  },
+  {
+    label: "Collaborate",
+    href: "/collaborate",
+    children: [
+      ["Partnership Overview", "/collaborate"],
+      ["Corporate Wellness", "/corporate-wellness"],
+      ["Hospitals & Healthcare", "/collaborate#hospitals--healthcare"],
+      ["Schools & Institutions", "/collaborate#schools--institutions"],
+      ["NGOs & Communities", "/collaborate#ngos--communities"],
+    ],
+  },
+  {
+    label: "Flagship Initiatives",
+    href: "/flagship-initiatives",
+    children: [
+      ["Initiatives Overview", "/flagship-initiatives"],
+      ["Project SAANIDHYA", "/flagship-initiatives/project-saanidhya"],
+      ["Modern Workplace Wellness", "/corporate-wellness"],
+      ["Community Wellness", "/collaborate"],
+    ],
+  },
+  {
+    label: "Resources",
+    href: "/resources",
+    children: [
+      ["Articles & Blogs", "/resources#articles"],
+      ["Videos", "/resources#videos"],
+      ["Guided Practices", "/resources#practices"],
+      ["Wellness Library", "/resources#library"],
+      ["Research & Insights", "/resources#research"],
+      ["Events & Workshops", "/events"],
+    ],
+  },
+  {
+    label: "Contact",
+    href: "/contact",
+    children: [
+      ["Get in Touch", "/contact"],
+      ["Book a Session", "/book"],
+      ["Corporate Enquiry", "/contact#send-an-enquiry"],
+    ],
+  },
 ] as const;
 
 export const programmes = [

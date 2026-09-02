@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { Menu, X, Leaf } from "lucide-react";
+import { ChevronDown, Menu, X, Leaf } from "lucide-react";
 import { useEffect, useState } from "react";
 import { nav, site } from "@/lib/site";
 export function Header() {
@@ -24,10 +24,22 @@ export function Header() {
           </b>
         </Link>
         <nav className="desktop-nav" aria-label="Main navigation">
-          {nav.map(([l, h]) => (
-            <Link key={h} href={h}>
-              {l}
-            </Link>
+          {nav.map((item) => (
+            <div className="nav-item" key={item.href}>
+              <Link className="nav-trigger" href={item.href}>
+                {item.label}
+                <ChevronDown aria-hidden="true" size={13} strokeWidth={2.2} />
+              </Link>
+              <div className="nav-dropdown">
+                <div className="nav-dropdown-inner">
+                  {item.children.map(([label, href]) => (
+                    <Link key={`${item.href}-${href}-${label}`} href={href}>
+                      {label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
           ))}
         </nav>
         <Link className="btn btn-primary desktop-cta" href="/book">
@@ -46,10 +58,29 @@ export function Header() {
       {open && (
         <div id="mobile-menu" className="mobile-menu">
           <nav aria-label="Mobile navigation">
-            {nav.map(([l, h]) => (
-              <Link onClick={() => setOpen(false)} key={h} href={h}>
-                {l}
-              </Link>
+            {nav.map((item) => (
+              <details className="mobile-nav-group" key={item.href}>
+                <summary>
+                  {item.label}
+                  <ChevronDown aria-hidden="true" size={18} />
+                </summary>
+                <div>
+                  <Link onClick={() => setOpen(false)} href={item.href}>
+                    {item.label} overview
+                  </Link>
+                  {item.children
+                    .filter(([, href]) => href !== item.href)
+                    .map(([label, href]) => (
+                      <Link
+                        onClick={() => setOpen(false)}
+                        key={`${item.href}-${href}-${label}`}
+                        href={href}
+                      >
+                        {label}
+                      </Link>
+                    ))}
+                </div>
+              </details>
             ))}
             <Link
               onClick={() => setOpen(false)}

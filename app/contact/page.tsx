@@ -53,7 +53,7 @@ export default function Page() {
               <small>Added when the location is confirmed</small>
             </div>
           </aside>
-          <div>
+          <div id="send-an-enquiry">
             <h2 className="title">Send an enquiry</h2>
             <EnquiryForm kind="contact" />
           </div>
