@@ -33,6 +33,16 @@ const work = [
     href: "/flagship-initiatives/project-saanidhya",
   },
 ];
+const values = [
+  ["Prevention first", "Support health before challenges become more complex."],
+  ["Compassion", "Meet every person with empathy, respect and understanding."],
+  ["Integrity", "Practise responsibly, ethically and transparently."],
+  ["Evidence-informed", "Connect traditional knowledge with contemporary understanding."],
+  ["Inclusivity", "Welcome different ages, abilities and backgrounds."],
+  ["Lifelong learning", "Learn, reflect and continuously evolve."],
+  ["Community well-being", "Recognise that personal and shared health are connected."],
+  ["Individual needs", "Respect the uniqueness of every wellness journey."],
+] as const;
 export default function Home() {
   return (
     <>
@@ -88,10 +98,14 @@ export default function Home() {
       <section className="welcome-strip">
         <div className="container welcome-grid">
           <div>
-            <p className="eyebrow">Welcome to CFIW</p>
+            <p className="eyebrow">Welcome</p>
             <h2 className="title" style={{ fontSize: "clamp(2.3rem,4vw,4rem)" }}>
-              Health is something we actively cultivate.
+              Welcome to the Centre for Integrative Wellness
             </h2>
+            <p className="lede">
+              CFIW is an emerging wellness organisation founded on the belief
+              that health should be actively cultivated.
+            </p>
           </div>
           <div>
             <p className="lede">
@@ -109,13 +123,31 @@ export default function Home() {
         <div className="container">
           <SectionHeading
             center
-            eyebrow="Paths to well-being"
+            eyebrow="Creating health together"
             title="Work with us"
-            text="Personalised wellness and collaborative programmes for individuals, communities and organisations."
+            text="A platform for creating health to live better, with personalised wellness and collaborative programmes for individuals, communities and organisations."
           />
           <div className="work-grid" style={{ marginTop: 44 }}>
             {work.map((x) => (
               <ImageCard key={x.title} {...x} />
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="section values-band">
+        <div className="container">
+          <SectionHeading
+            eyebrow="What guides us"
+            title="Our values"
+            text="Care, individual dignity, thoughtful evidence and sustainable progress guide every interaction."
+          />
+          <div className="values-grid" style={{ marginTop: 38 }}>
+            {values.map(([title, text]) => (
+              <article className="value-card" key={title}>
+                <span aria-hidden="true" />
+                <h3>{title}</h3>
+                <p>{text}</p>
+              </article>
             ))}
           </div>
         </div>

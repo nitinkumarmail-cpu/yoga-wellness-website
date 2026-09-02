@@ -24,7 +24,7 @@ export default function Page() {
             ],
           },
           {
-            title: "What Can We Work On Together?",
+            title: "What We Work On Together",
             text: "Your programme may have one clear goal or bring several aspects of well-being together.",
             items: [
               "Strength & fitness",

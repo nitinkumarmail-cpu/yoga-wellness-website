@@ -32,10 +32,17 @@
 .welcome-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(40px,8vw,110px);align-items:center}
 .work-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
 .work-grid .card:nth-child(2){background:#f3f8e7}.work-grid .card:nth-child(3){background:#fff2cf}.work-grid .card:nth-child(4){background:#f9e4d8}
+.values-band{background:linear-gradient(125deg,#fff4c9,var(--paper) 48%,#e8f3d8)}
+.values-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.value-card{position:relative;min-height:190px;padding:28px 24px;background:#fffef7d9;border:1px solid #d8dfc9;border-radius:18px;box-shadow:0 12px 34px #145b3a0d}
+.value-card span{display:block;width:34px;height:6px;margin-bottom:22px;border-radius:999px;background:var(--saffron)}
+.value-card:nth-child(3n+2) span{background:var(--leaf)}.value-card:nth-child(3n) span{background:var(--coral)}
+.value-card h3{margin:0 0 9px;font-size:1.45rem}.value-card p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.6}
+.flagship-callout{background:linear-gradient(120deg,var(--sun),#f8e6ad 55%,var(--sage))}
 .steps{grid-template-columns:repeat(5,1fr);gap:12px;background:transparent;border:0}
 .step{border:1px solid var(--line);border-radius:18px}
 .step b{color:var(--coral)}
 .prose>section:nth-child(3n+1) .card{background:#f3f8e7}.prose>section:nth-child(3n+2) .card{background:#fff2cf}.prose>section:nth-child(3n) .card{background:#f9e4d8}
-@media(max-width:1050px){.work-grid{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:1050px){.work-grid,.values-grid{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:800px){.home-hero{background:linear-gradient(180deg,var(--paper),var(--sand))}.hero-image{margin:0 18px;border-radius:22px}.welcome-grid{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.work-grid,.steps{grid-template-columns:1fr}}
+@media(max-width:560px){.work-grid,.values-grid,.steps{grid-template-columns:1fr}.value-card{min-height:0}}

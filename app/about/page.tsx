@@ -9,16 +9,16 @@ export default function Page() {
   return (
     <ContentPage
       eyebrow="About CFIW"
-      title="Health should be created, not simply restored"
-      intro="CFIW was created to make yoga and well-being personal, practical and responsive to the lives people actually lead."
+      title="Wellness understood as a whole"
+      intro="CFIW promotes health through traditional yogic wisdom and contemporary health understanding, guided by the principles of salutogenesis and lifelong well-being."
       blocks={[
         {
           title: "Our Story",
-          text: "The Centre for Integrative Wellness grew from years of working with corporate professionals, healthcare settings, expatriate communities, educators, senior citizens and individuals seeking healthier, more balanced lives. Across these different settings, the same challenges appeared: long working hours, physical inactivity, chronic stress, poor sleep, persistent discomfort and very little time to understand the body. CFIW brings timeless yogic wisdom into conversation with anatomy, physiology, movement science and preventive healthcare so that creating health becomes practical and relevant to modern life.",
+          text: "Health should be created, not simply restored. This belief lies at the heart of everything we do. The Centre for Integrative Wellness grew from years of working with corporate professionals, healthcare settings, expatriate communities, educators, senior citizens and individuals seeking healthier, more balanced lives. Across these different settings, the same challenges appeared: long working hours, physical inactivity, chronic stress, poor sleep, persistent discomfort and very little time to understand the body. CFIW brings timeless yogic wisdom into conversation with anatomy, physiology, movement science and preventive healthcare so that creating health becomes practical and relevant to modern life.",
         },
         {
           title: "Our Approach",
-          text: "Our work begins by listening. We understand the individual, organisation or community, review the factors influencing well-being, and shape a programme around real needs, abilities, health context and goals. Movement, breathing, sleep, nutrition, behaviour and environment are understood as connected parts of one living system.",
+          text: "Modern life can bring fatigue, stress, nervous-system overload, postural imbalance, reduced movement and disconnection from physical and emotional well-being. Our approach integrates traditional yogic wisdom with therapeutic and lifestyle-oriented wellness practices to support sustainable and mindful living. We begin by listening, understand the individual, organisation or community, and shape each programme around real needs, abilities, health context and goals.",
           items: [
             "Understand",
             "Assess",
