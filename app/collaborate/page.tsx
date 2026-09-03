@@ -11,39 +11,20 @@ export default function Page() {
         intro="CFIW works with organisations and institutions to develop thoughtful programmes grounded in context, participation and clear professional boundaries."
         blocks={[
           {
-            title: "Corporate Wellness",
-            text: "Custom sessions and series for organisations seeking practical movement, mindfulness and well-being experiences.",
-          },
-          {
             title: "Hospitals & Healthcare",
             text: "Collaborative yoga and wellness programmes for patients and healthcare staff, developed with clinical stakeholders and clear professional boundaries. CFIW complements, and does not replace, clinical care.",
           },
           {
-            title: "Schools & Institutions",
+            title: "School & Education Institutions",
             text: "Age-appropriate movement, mindfulness, wellness awareness and healthy-routine programmes designed with institutional needs in mind.",
           },
           {
-            title: "Embassies & Cultural Centres",
+            title: "Cultural Centres",
             text: "Cultural and community-facing wellness experiences that connect people through accessible shared practice.",
           },
           {
-            title: "NGOs & Communities",
-            text: "Inclusive programmes shaped around local needs, access, language and the strengths already present within a community.",
-          },
-          {
-            title: "Partnerships Process",
-            text: "A transparent five-stage pathway from first conversation to learning review.",
-            items: [
-              "Enquiry",
-              "Consultation",
-              "Programme design",
-              "Implementation",
-              "Review",
-            ],
-          },
-          {
-            title: "Case Studies",
-            text: "Verified partnership stories and outcomes will be published here as CFIW’s case-study library grows.",
+            title: "Flagship Initiative",
+            text: "Project SAANIDHYA brings gentle movement, breath, participation and companionship to elders in old-age homes and care communities.",
           },
         ]}
       />

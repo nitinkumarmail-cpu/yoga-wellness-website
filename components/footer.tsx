@@ -4,36 +4,38 @@ const cols = [
   {
     h: "About",
     l: [
-      ["What is CFIW?", "/what-is-cfiw"],
-      ["Our story", "/about#our-story"],
-      ["Our approach", "/about#our-approach"],
-      ["Founder", "/founder"],
+      ["Who We Are", "/what-is-cfiw#who-we-are"],
+      ["Why CFIW", "/what-is-cfiw#more-than-a-wellness-centre"],
+      ["Integrative Wellness", "/what-is-cfiw#what-is-integrative-wellness"],
+      ["Salutogenesis", "/what-is-cfiw#what-is-salutogenesis"],
     ],
   },
   {
     h: "Programs",
     l: [
-      ["Personal yoga", "/personal-wellness"],
-      ["All programs", "/programmes"],
-      ["Therapeutic wellness", "/therapeutic-wellness"],
-      ["Meditation", "/programmes#meditation"],
-      ["Breathwork", "/programmes#breathwork"],
+      ["Yoga Wellness", "/yoga-classes"],
+      ["Therapeutic Wellness", "/therapeutic-wellness"],
+      ["Yoga Therapy", "/therapeutic-wellness#therapeutic-yoga-clinical-wellness"],
+      ["Corporate Wellness", "/corporate-wellness"],
+      ["Courses", "/events"],
     ],
   },
   {
     h: "Collaborate",
     l: [
-      ["Corporate wellness", "/corporate-wellness"],
-      ["Hospitals & healthcare", "/healthcare-wellness"],
-      ["Partnerships", "/collaborate#partnerships-process"],
+      ["Hospitals & Healthcare", "/healthcare-wellness"],
+      ["School & Education Institutions", "/schools-education-institutions"],
+      ["Cultural Centres", "/cultural-centres"],
+      ["Flagship Initiative", "/flagship-initiatives/project-saanidhya"],
     ],
   },
   {
-    h: "Resources",
+    h: "Meet Founder",
     l: [
-      ["Articles", "/resources"],
-      ["Guided practices", "/resources#practices"],
-      ["Workshops", "/events"],
+      ["Founder", "/founder#meet-the-founder"],
+      ["Qualifications", "/founder#qualifications-certifications"],
+      ["Areas of Expertise", "/founder#areas-of-expertise"],
+      ["Teaching Philosophy", "/founder#teaching-philosophy"],
     ],
   },
 ];
@@ -44,10 +46,6 @@ export function Footer() {
         <div>
           <b className="footer-logo">CFIW</b>
           <p>{site.fullName}</p>
-          <p className="footer-copy">
-            A considered space for personalised practice, professional
-            collaboration and sustainable well-being.
-          </p>
         </div>
         {cols.map((c) => (
           <div key={c.h}>

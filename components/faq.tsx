@@ -8,7 +8,7 @@ const faqs = [
   ],
   [
     "How long is a session?",
-    "Most sessions are planned for 45–60 minutes. The final length is agreed during your consultation.",
+    "Most sessions are planned for 45 to 60 minutes. The final length is agreed during your consultation.",
   ],
   [
     "What should I wear and bring?",

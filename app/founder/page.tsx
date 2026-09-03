@@ -11,7 +11,7 @@ export default function Page() {
         title="Teaching that starts with listening"
         text="Meet the person behind CFIW’s attentive, integrative approach."
       />
-      <section className="section">
+      <section className="section" id="meet-the-founder">
         <div className="container editorial">
           <div className="editorial-image">
             <Image
@@ -29,17 +29,17 @@ export default function Page() {
               space will describe the instructor’s path into yoga, professional
               experience and commitment to personalised, accessible teaching.
             </p>
-            <h3>Qualifications & certifications</h3>
+            <h3 id="qualifications-certifications">Qualifications & certifications</h3>
             <p className="lede">
               Verified qualifications and certification details to be confirmed
               before publication.
             </p>
-            <h3>Areas of expertise</h3>
+            <h3 id="areas-of-expertise">Areas of expertise</h3>
             <p className="lede">
               Personal yoga · Beginner support · Mobility · Breathwork ·
               Meditation · Workplace wellness · Healthy ageing
             </p>
-            <h3>Teaching philosophy</h3>
+            <h3 id="teaching-philosophy">Teaching philosophy</h3>
             <p className="lede">
               Practice should meet a person with curiosity and respect. Clear
               guidance, thoughtful adaptation and steady progress matter more

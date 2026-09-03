@@ -1,77 +1,68 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { ContentPage } from "@/components/content-page";
-import { CTA } from "@/components/ui";
 
 export const metadata: Metadata = {
   title: "Hospitals & Healthcare",
-  description:
-    "Responsible yoga and wellness collaborations for patients, healthcare professionals and institutions.",
+  description: "Yoga and wellness programmes for patient support and healthcare staff, developed within clear clinical boundaries.",
 };
 
 export default function Page() {
   return (
-    <>
-      <ContentPage
-        eyebrow="Hospitals & healthcare institutions"
-        title="Integrating yoga and wellness into healthcare"
-        intro="Health is shaped not only by clinical treatment, but also by how people move, breathe, recover, manage stress and participate in everyday life. Appropriately adapted yoga can offer a complementary approach within clear professional boundaries."
-        cta={false}
-        blocks={[
-          {
-            title: "Patient Wellness & Clinical Collaboration",
-            text: "CFIW works with healthcare professionals to develop therapeutic and preventive yoga programmes based on a person's medical context, functional capacity and stage of recovery. Clinical care remains central, and our programmes complement rather than replace it.",
-            items: [
-              "Orthopaedics & musculoskeletal health",
-              "Pulmonology & respiratory health",
-              "Endocrinology & metabolic health",
-              "Women's wellness",
-              "Cardiovascular & preventive wellness",
-              "Geriatrics & healthy ageing",
-            ],
+    <ContentPage
+      eyebrow="Hospitals & Healthcare"
+      title="Integrating Yoga & Wellness Into Healthcare"
+      intro="Health is shaped not only by clinical treatment, but also by how people move, breathe, recover, manage stress and participate in everyday life."
+      blocks={[
+        {
+          id: "why-yoga-in-healthcare",
+          title: "Why Yoga in Healthcare?",
+          text: "Yoga, when appropriately adapted and delivered within professional and clinical boundaries, can provide a complementary approach to health and well-being through movement, breathing, relaxation, mindfulness and lifestyle practices.",
+          paragraphs: [
+            "The World Health Organization recognises yoga within the wider field of traditional, complementary and integrative medicine. Its current strategy supports evidence-based, safe and effective integration into health systems.",
+            "WHO has also highlighted growing clinical evidence around yoga, including benefits related to stress, strength and flexibility, while emphasising appropriate evidence, quality and safety.",
+            "At CFIW, collaboration is central to our approach. We work with hospitals, doctors, rehabilitation professionals and allied healthcare teams to develop yoga and wellness programmes that complement, not replace, conventional medical care.",
+          ],
+          link: {
+            label: "WHO: Traditional, Complementary and Integrative Medicine",
+            href: "https://www.who.int/health-topics/traditional-complementary-and-integrative-medicine",
           },
-          {
-            title: "Healthcare Staff Wellness",
-            text: "Doctors, nurses, therapists and healthcare professionals work in environments that demand physical endurance, emotional resilience and sustained responsibility. CFIW creates structured programmes supporting movement, posture, stress awareness, recovery and team well-being.",
-            items: [
-              "Yoga & functional movement",
-              "Posture & mobility",
-              "Pranayama & breathwork",
-              "Meditation",
-              "Stress & recovery",
-              "Sleep & lifestyle wellness",
-              "Workshops & retreats",
-            ],
-          },
-          {
-            title: "Our Collaboration Approach",
-            text: "We understand the need, collaborate with the healthcare team, design the programme, deliver responsibly and review learning together. Programmes can range from focused workshops and wellness days to regular staff sessions, leadership wellness and curated retreats.",
-            items: [
-              "Understand the need",
-              "Collaborate",
-              "Design",
-              "Deliver",
-              "Review",
-            ],
-          },
-        ]}
-      />
-      <section className="section flagship-callout">
-        <div className="container cta">
-          <div>
-            <p className="eyebrow">Flagship initiative</p>
-            <h2 className="title">Better patient support. Healthier healthcare teams.</h2>
-            <p className="lede">
-              Project SAANIDHYA extends CFIW&apos;s commitment to care through gentle
-              movement, breath, participation and connection for elders.
-            </p>
-          </div>
-          <Link className="btn btn-primary" href="/flagship-initiatives/project-saanidhya">
-            Explore Project SAANIDHYA
-          </Link>
-        </div>
-      </section>
-      <CTA />
-    </>
+        },
+        {
+          id: "patient-wellness-clinical-collaboration",
+          title: "Patient Wellness & Clinical Collaboration",
+          quote: "Supporting the Person Beyond the Diagnosis",
+          text: "CFIW collaborates with healthcare professionals to develop therapeutic and preventive yoga programmes based on the patient's medical context, functional capacity and stage of recovery.",
+          details: [
+            { title: "Orthopaedics & Musculoskeletal Health", text: "Neck and back concerns, joint and knee health, mobility, posture and functional movement." },
+            { title: "Pulmonology & Respiratory Health", text: "Breath awareness, therapeutic movement, respiratory wellness and pulmonary rehabilitation support." },
+            { title: "Endocrinology & Metabolic Health", text: "Type 2 diabetes, thyroid wellness, weight management and lifestyle modification." },
+            { title: "Obstetrics, Gynaecology & Women's Wellness", text: "PCOS wellness, prenatal and postnatal wellness, menopause and midlife wellness." },
+            { title: "Cardiovascular & Preventive Wellness", text: "Hypertension, stress management, appropriate movement and lifestyle wellness." },
+            { title: "Geriatrics & Healthy Ageing", text: "Mobility, balance, functional strength, movement confidence and independence." },
+          ],
+          paragraphs: [
+            "Programmes may integrate Therapeutic Yoga, functional movement, Pranayama, relaxation, meditation and lifestyle education, adapted where appropriate to medical recommendations.",
+            "Clinical care remains central. CFIW works alongside it.",
+          ],
+        },
+        {
+          id: "healthcare-staff-wellness",
+          title: "Healthcare Staff Wellness",
+          quote: "Caring for Those Who Care",
+          text: "Doctors, nurses, therapists and healthcare professionals work in environments that demand physical endurance, emotional resilience and sustained responsibility.",
+          paragraphs: [
+            "CFIW collaborates with healthcare institutions to create structured staff wellness programmes supporting movement, posture, stress management, recovery and overall well-being.",
+            "Collaboration can range from focused workshops and wellness days to regular staff programmes, leadership wellness and curated retreats.",
+          ],
+          items: ["Yoga & Functional Movement", "Posture & Mobility", "Pranayama & Breathwork", "Meditation", "Stress & Recovery", "Relaxation", "Sleep & Lifestyle Wellness", "Team Well-being", "Wellness Workshops & Retreats"],
+        },
+        {
+          id: "our-collaboration-approach",
+          title: "Our Collaboration Approach",
+          text: "We build each programme with the institution and the healthcare professionals responsible for care.",
+          items: ["Understand the Need", "Collaborate With the Healthcare Team", "Design the Programme", "Deliver", "Review"],
+        },
+      ]}
+    />
   );
 }

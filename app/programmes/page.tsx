@@ -3,13 +3,18 @@ import Link from "next/link";
 import { PageHero, CTA } from "@/components/ui";
 import { programmes } from "@/lib/site";
 export const metadata: Metadata = { title: "Wellness Programs" };
+const programmeLinks = {
+  "yoga-classes": "/yoga-classes",
+  "therapeutic-wellness": "/therapeutic-wellness",
+  "corporate-wellness": "/corporate-wellness",
+} as const;
 export default function Page() {
   return (
     <>
       <PageHero
         eyebrow="Wellness programs"
-        title="Choose a useful place to begin"
-        text="These pathways are starting points. Every personal program can be adjusted after an initial conversation."
+        title="Three pathways. One thoughtful approach."
+        text="Explore Yoga Classes, Therapeutic Yoga and Corporate Wellness on their dedicated pages."
       />
       <section className="section">
         <div className="container grid3">
@@ -20,15 +25,11 @@ export default function Page() {
               <p className="lede" style={{ fontSize: ".96rem" }}>
                 {p.text}
               </p>
-              <p style={{ color: "var(--muted)", lineHeight: 1.7 }}>
-                Format, frequency and progression are agreed personally. Pricing
-                and availability will be confirmed during enquiry.
-              </p>
               <Link
                 className="btn btn-primary"
-                href={`/book?programme=${p.slug}`}
+                href={programmeLinks[p.slug]}
               >
-                Enquire now
+                Explore programme
               </Link>
             </article>
           ))}

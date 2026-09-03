@@ -7,7 +7,7 @@ export function SectionHeading({
   text,
   center = false,
 }: {
-  eyebrow: string;
+  eyebrow?: string;
   title: string;
   text?: string;
   center?: boolean;
@@ -20,7 +20,7 @@ export function SectionHeading({
         maxWidth: 760,
       }}
     >
-      <p className="eyebrow">{eyebrow}</p>
+      {eyebrow && <p className="eyebrow">{eyebrow}</p>}
       <h2 className="title">{title}</h2>
       {text && (
         <p className="lede" style={{ marginInline: center ? "auto" : 0 }}>
@@ -90,7 +90,7 @@ export function CTA() {
           <p className="eyebrow" style={{ color: "#bfd2c3" }}>
             A practice that begins with you
           </p>
-          <h2 className="title">Ready to begin your wellness journey?</h2>
+          <h2 className="title cta-title">Ready to begin your wellness journey?</h2>
           <p className="lede">
             Tell us where you are and what you hope to make space for. We’ll
             help you find a thoughtful next step.
