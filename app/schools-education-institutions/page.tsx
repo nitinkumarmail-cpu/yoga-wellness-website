@@ -7,13 +7,21 @@ export default function Page() {
   return (
     <ContentPage
       eyebrow="Collaborate"
-      title="Wellness Where People Learn"
-      intro="Age-appropriate yoga, mindful movement, breath awareness and wellness education designed with the needs of each learning community in mind."
+      title="Cultural & Institutional Engagements"
+      intro="Well-being as Part of Education"
       blocks={[
-        { title: "Student Wellness", text: "Accessible practices that encourage healthy movement, body awareness, calm attention and sustainable everyday routines." },
-        { title: "Educator & Staff Wellness", text: "Thoughtful sessions supporting movement, recovery, stress awareness and well-being for the people who guide and support learners." },
-        { title: "Education & Capacity Building", text: "Workshops that build a shared understanding of movement, breath, preventive health and responsible wellness practice." },
-        { title: "Designed Together", text: "We begin with the institution's context, age groups, setting and objectives before shaping an appropriate programme.", items: ["Understand", "Design", "Deliver", "Review"] },
+        {
+          title: "Schools & Educational Institutions",
+          text: "Education is not only about what students learn, but also about how they grow, respond to challenges and learn to care for themselves.",
+          paragraphs: [
+            "CFIW seeks to collaborate with schools, colleges, universities and educational institutions to make wellness a meaningful part of the learning environment. Through Yoga, movement, breath awareness, mindfulness and wellness education, the aim is to help young people develop an early understanding of their body, mind, habits and overall well-being.",
+            "As students grow, they navigate academic pressure, long hours of sitting, digital exposure, changing emotions and increasingly demanding routines. Learning simple ways to move better, breathe consciously, manage stress, improve attention and build healthier everyday habits can support them not only during their years of education, but well beyond them.",
+            "Our approach can extend to educators and staff, recognising that the well-being of those who teach and support students is equally important in creating a healthy learning environment.",
+            "Each collaboration is shaped around the age group, needs and culture of the institution, keeping the experience practical, inclusive and relevant.",
+            "At CFIW, we believe that alongside preparing young people for their future, education can also give them something fundamental.",
+          ],
+          quote: "The understanding of how to take care of themselves.",
+        },
       ]}
     />
   );

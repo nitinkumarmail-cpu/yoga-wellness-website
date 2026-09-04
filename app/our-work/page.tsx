@@ -28,12 +28,12 @@ export default function Page() {
           quote: "To help people understand their bodies, create better health and live better, every single day.",
         },
         {
-          id: "wellness-understood-as-a-whole",
-          title: "Wellness Understood as a Whole",
-          text: "CFIW promotes health through traditional yogic wisdom combined with contemporary health understanding. Guided by the principles of salutogenesis, our work focuses on sustainable health, improved quality of life and lifelong well-being, rather than simply managing illness.",
+          id: "our-approach",
+          title: "Our Approach",
+          text: "CFIW promotes health by bringing traditional yogic wisdom together with contemporary health understanding. Guided by the principles of salutogenesis, our work focuses on sustainable health, improving quality of life and embracing lifelong well-being, rather than simply managing illness.",
           paragraphs: [
-            "In today's fast-paced lifestyles, many individuals experience fatigue, stress, nervous-system overload, postural imbalance, reduced movement and a growing disconnection from their physical and emotional well-being. Increasing stress, irregular routines and high-performance lifestyles can influence overall vitality, including energy levels, sleep quality, emotional balance and hormonal regulation, particularly among people navigating demanding professional and personal responsibilities.",
-            "Our approach integrates traditional yogic wisdom with therapeutic and lifestyle-oriented wellness practices to support sustainable and mindful living, helping individuals reconnect with balance, vitality, resilience and overall well-being amid the demands of modern life.",
+            "In today's fast-paced lifestyles, many individuals experience fatigue, stress, nervous-system overload, postural imbalance, reduced movement and a growing disconnection from their physical and emotional well-being. Increasing stress, irregular routines and high-performance lifestyles can influence overall vitality, including energy levels, sleep quality, emotional balance and hormonal regulation, particularly among individuals navigating demanding professional and personal responsibilities.",
+            "Our approach integrates traditional yogic wisdom with therapeutic and lifestyle-oriented wellness practices to support sustainable and mindful living. It helps individuals reconnect with balance, vitality, resilience and overall well-being amid the demands of modern life.",
           ],
         },
         {

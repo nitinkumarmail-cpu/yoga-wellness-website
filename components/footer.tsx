@@ -5,37 +5,35 @@ const cols = [
     h: "About",
     l: [
       ["Who We Are", "/what-is-cfiw#who-we-are"],
-      ["Why CFIW", "/what-is-cfiw#more-than-a-wellness-centre"],
-      ["Integrative Wellness", "/what-is-cfiw#what-is-integrative-wellness"],
-      ["Salutogenesis", "/what-is-cfiw#what-is-salutogenesis"],
+      ["Why CFIW", "/what-is-cfiw#why-cfiw"],
+      ["Our Philosophy", "/our-work#our-philosophy"],
+      ["Our Approach", "/our-work#our-approach"],
     ],
   },
   {
     h: "Programs",
     l: [
-      ["Yoga Wellness", "/yoga-classes"],
-      ["Therapeutic Wellness", "/therapeutic-wellness"],
-      ["Yoga Therapy", "/therapeutic-wellness#therapeutic-yoga-clinical-wellness"],
+      ["Yoga Classes", "/yoga-classes"],
+      ["Therapeutic Yoga", "/therapeutic-wellness"],
       ["Corporate Wellness", "/corporate-wellness"],
-      ["Courses", "/events"],
+      ["Wellness Gallery", "/gallery"],
     ],
   },
   {
     h: "Collaborate",
     l: [
       ["Hospitals & Healthcare", "/healthcare-wellness"],
-      ["School & Education Institutions", "/schools-education-institutions"],
+      ["Schools & Educational Institutions", "/schools-education-institutions"],
       ["Cultural Centres", "/cultural-centres"],
       ["Flagship Initiative", "/flagship-initiatives/project-saanidhya"],
     ],
   },
   {
-    h: "Meet Founder",
+    h: "Resources",
     l: [
-      ["Founder", "/founder#meet-the-founder"],
-      ["Qualifications", "/founder#qualifications-certifications"],
-      ["Areas of Expertise", "/founder#areas-of-expertise"],
-      ["Teaching Philosophy", "/founder#teaching-philosophy"],
+      ["Founder", "/founder#meet-our-founder"],
+      ["Workshops", "/events"],
+      ["Contact Us", `tel:${site.phone.replace(/\s/g, "")}`],
     ],
   },
 ];

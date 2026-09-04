@@ -20,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/flagship-initiatives/project-saanidhya",
     "/resources",
     "/events",
+    "/gallery",
     "/contact",
     "/book",
   ];

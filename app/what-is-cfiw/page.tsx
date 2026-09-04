@@ -26,10 +26,11 @@ export default function Page() {
           items: ["Person-centred", "Evidence-informed", "Preventive", "Collaborative", "Practical", "Inclusive"],
         },
         {
-          id: "more-than-a-wellness-centre",
-          title: "More Than a Wellness Centre",
-          text: "At CFIW, we cultivate healthier ways of living through yogic practice.",
+          id: "why-cfiw",
+          title: "Why CFIW",
+          text: "More Than a Wellness Centre",
           paragraphs: [
+            "At CFIW, we cultivate healthier ways of living through yogic practice.",
             "Whether working with an individual, a healthcare institution, a corporate organisation or a community, our approach remains the same. Our programmes span the full continuum of health.",
             "We understand the person. We build the foundation. We create health.",
             "For many, this means improving mobility, strength, flexibility, balance, fitness and overall well-being through personalised and group wellness programmes.",

@@ -1,16 +1,46 @@
 "use client";
 import Link from "next/link";
 import { ChevronDown, Menu, X, Leaf } from "lucide-react";
-import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import { useEffect, useRef, useState } from "react";
 import { nav, site } from "@/lib/site";
 export function Header() {
   const [open, setOpen] = useState(false);
+  const [expandedGroup, setExpandedGroup] = useState<string | null>(null);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    setOpen(false);
+    setExpandedGroup(null);
+  }, [pathname]);
+
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
+    if (open) {
+      window.requestAnimationFrame(() => {
+        mobileMenuRef.current?.querySelector<HTMLElement>("button, a")?.focus();
+      });
+    }
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape" && open) {
+        setOpen(false);
+        menuButtonRef.current?.focus();
+      }
+    };
+    document.addEventListener("keydown", handleKeyDown);
     return () => {
       document.body.style.overflow = "";
+      document.removeEventListener("keydown", handleKeyDown);
     };
   }, [open]);
+
+  const closeMenu = () => {
+    setOpen(false);
+    setExpandedGroup(null);
+  };
+
   return (
     <header className="header">
       <div className="container header-inner">
@@ -46,8 +76,10 @@ export function Header() {
           Book your session
         </Link>
         <button
+          ref={menuButtonRef}
+          type="button"
           className="menu-btn"
-          onClick={() => setOpen(!open)}
+          onClick={() => setOpen((current) => !current)}
           aria-expanded={open}
           aria-controls="mobile-menu"
           aria-label={open ? "Close menu" : "Open menu"}
@@ -56,23 +88,32 @@ export function Header() {
         </button>
       </div>
       {open && (
-        <div id="mobile-menu" className="mobile-menu">
+        <div id="mobile-menu" className="mobile-menu" ref={mobileMenuRef}>
           <nav aria-label="Mobile navigation">
-            {nav.map((item) => (
-              <details className="mobile-nav-group" key={item.href}>
-                <summary>
+            {nav.map((item, index) => {
+              const groupId = `mobile-nav-${index}`;
+              const expanded = expandedGroup === item.href;
+              return (
+              <div className={`mobile-nav-group${expanded ? " is-open" : ""}`} key={item.href}>
+                <button
+                  type="button"
+                  className="mobile-nav-trigger"
+                  aria-expanded={expanded}
+                  aria-controls={groupId}
+                  onClick={() => setExpandedGroup(expanded ? null : item.href)}
+                >
                   {item.label}
                   <ChevronDown aria-hidden="true" size={18} />
-                </summary>
-                <div>
-                  <Link onClick={() => setOpen(false)} href={item.href}>
+                </button>
+                <div id={groupId} className="mobile-nav-links" hidden={!expanded}>
+                  <Link onClick={closeMenu} href={item.href}>
                     {item.label} overview
                   </Link>
                   {item.children
                     .filter(([, href]) => href !== item.href)
                     .map(([label, href]) => (
                       <Link
-                        onClick={() => setOpen(false)}
+                        onClick={closeMenu}
                         key={`${item.href}-${href}-${label}`}
                         href={href}
                       >
@@ -80,10 +121,10 @@ export function Header() {
                       </Link>
                     ))}
                 </div>
-              </details>
-            ))}
+              </div>
+            )})}
             <Link
-              onClick={() => setOpen(false)}
+              onClick={closeMenu}
               className="btn btn-primary"
               href="/book"
             >

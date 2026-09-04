@@ -8,7 +8,7 @@ import {
   UserRound,
 } from "lucide-react";
 import { CTA, ImageCard, SectionHeading } from "@/components/ui";
-import { resources } from "@/lib/site";
+import { galleryItems } from "@/lib/site";
 
 const work = [
   {
@@ -29,9 +29,10 @@ const work = [
     image: "/images/corporate-wellness.png",
   },
   {
-    title: "Cultural Centre & Education Institute",
+    title: "Cultural Centres & Educational Institutions",
     text: "Accessible wellness experiences designed for the places where people learn, gather and connect.",
     href: "/cultural-centres",
+    image: "/images/community-wellness.png",
   },
 ];
 
@@ -52,6 +53,7 @@ export default function Home() {
       <section className="home-hero">
         <div className="hero-grid">
           <div className="hero-copy">
+            <p className="eyebrow hero-welcome">Welcome to CFIW</p>
             <h1 className="display home-title">Centre for Integrative Wellness</h1>
             <p className="lede">
               CFIW is an emerging wellness organisation founded on the belief
@@ -153,7 +155,7 @@ export default function Home() {
                 context before shaping a practice that feels useful, sustainable
                 and genuinely yours.
               </p>
-              <Link className="text-link" href="/yoga-classes">
+              <Link className="btn btn-accent" href="/yoga-classes">
                 Explore personal wellness <ArrowRight size={15} />
               </Link>
             </div>
@@ -178,7 +180,7 @@ export default function Home() {
         <div className="container editorial">
           <div className="editorial-image">
             <Image
-              src="/images/corporate-wellness.png"
+              src="/images/corporate-session.png"
               alt="Colleagues taking part in a gentle workplace wellness session"
               fill
               sizes="50vw"
@@ -192,7 +194,7 @@ export default function Home() {
               therapeutic movement, breathwork, meditation, lifestyle education
               and human connection.
             </p>
-            <Link href="/corporate-wellness" className="btn btn-light" style={{ alignSelf: "flex-start" }}>
+            <Link href="/corporate-wellness" className="btn btn-saffron" style={{ alignSelf: "flex-start" }}>
               Explore corporate wellness
             </Link>
           </div>
@@ -218,17 +220,24 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section rule">
+      <section className="section gallery-preview-section rule">
         <div className="container">
-          <SectionHeading eyebrow="Knowledge for everyday life" title="Explore our resources" />
-          <div className="grid3" style={{ marginTop: 35 }}>
-            {resources.map((resource) => (
-              <article className="card" key={resource.title}>
-                <p className="eyebrow">{resource.category} · {resource.time}</p>
-                <h3 style={{ fontSize: "1.7rem" }}>{resource.title}</h3>
-                <p className="lede" style={{ fontSize: ".94rem" }}>{resource.text}</p>
-                <Link className="text-link" href="/resources">Read article <ArrowRight size={15} /></Link>
-              </article>
+          <div className="gallery-preview-heading">
+            <SectionHeading
+              eyebrow="Life at CFIW"
+              title="Explore our wellness gallery"
+              text="A glimpse of personal practice, workplace wellness, community connection and learning through movement."
+            />
+            <Link className="btn btn-primary" href="/gallery">
+              View the full gallery <ArrowRight size={15} />
+            </Link>
+          </div>
+          <div className="gallery-preview-grid" style={{ marginTop: 35 }}>
+            {galleryItems.slice(0, 4).map((item, index) => (
+              <Link className={`gallery-preview-card gallery-preview-${index + 1}`} href="/gallery" key={item.src}>
+                <Image src={item.src} alt={item.alt} fill sizes="(max-width: 700px) 100vw, 50vw" />
+                <span>{item.title}</span>
+              </Link>
             ))}
           </div>
         </div>

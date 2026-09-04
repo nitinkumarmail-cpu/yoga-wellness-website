@@ -11,9 +11,9 @@ export const site = {
   location: "New Delhi",
   instagram: "https://instagram.com/",
   instructor: {
-    name: "Founder name to be confirmed",
-    title: "Founder & Lead Instructor",
-    experience: "Experience details to be confirmed",
+    name: "Shilpi Shikha",
+    title: "Founder, Centre for Integrative Wellness",
+    experience: "Yoga wellness professional and former corporate leader",
   },
 } as const;
 
@@ -23,9 +23,9 @@ export const nav = [
     href: "/what-is-cfiw",
     children: [
       ["Who We Are", "/what-is-cfiw#who-we-are"],
-      ["Why CFIW", "/what-is-cfiw#more-than-a-wellness-centre"],
-      ["What is Integrative Wellness?", "/what-is-cfiw#what-is-integrative-wellness"],
-      ["What is Salutogenesis?", "/what-is-cfiw#what-is-salutogenesis"],
+      ["Why CFIW", "/what-is-cfiw#why-cfiw"],
+      ["Our Philosophy", "/our-work#our-philosophy"],
+      ["Our Approach", "/our-work#our-approach"],
     ],
   },
   {
@@ -33,10 +33,11 @@ export const nav = [
     href: "/our-work",
     children: [
       ["Our Philosophy", "/our-work#our-philosophy"],
-      ["Wellness Understood as a Whole", "/our-work#wellness-understood-as-a-whole"],
+      ["Our Approach", "/our-work#our-approach"],
       ["Our Vision", "/our-work#our-vision"],
       ["Our Mission", "/our-work#our-mission"],
       ["Our Values", "/our-work#our-values"],
+      ["Wellness Gallery", "/gallery"],
     ],
   },
   {
@@ -46,6 +47,7 @@ export const nav = [
       ["Yoga Classes", "/yoga-classes"],
       ["Therapeutic Yoga", "/therapeutic-wellness"],
       ["Corporate Wellness", "/corporate-wellness"],
+      ["Wellness Gallery", "/gallery"],
     ],
   },
   {
@@ -53,7 +55,7 @@ export const nav = [
     href: "/collaborate",
     children: [
       ["Hospitals & Healthcare", "/healthcare-wellness"],
-      ["School & Education Institutions", "/schools-education-institutions"],
+      ["Schools & Educational Institutions", "/schools-education-institutions"],
       ["Cultural Centres", "/cultural-centres"],
       ["Flagship Initiative", "/flagship-initiatives/project-saanidhya"],
     ],
@@ -66,13 +68,10 @@ export const nav = [
     ],
   },
   {
-    label: "Meet Founder",
+    label: "Founder",
     href: "/founder",
     children: [
-      ["Meet the Founder", "/founder#meet-the-founder"],
-      ["Qualifications & Certifications", "/founder#qualifications-certifications"],
-      ["Areas of Expertise", "/founder#areas-of-expertise"],
-      ["Teaching Philosophy", "/founder#teaching-philosophy"],
+      ["Meet Our Founder", "/founder#meet-our-founder"],
     ],
   },
   {
@@ -125,5 +124,33 @@ export const resources = [
     title: "A five-minute breathing pause",
     text: "An introductory practice for returning attention to the rhythm of the breath.",
     time: "3 min read",
+  },
+] as const;
+
+export const galleryItems = [
+  {
+    src: "/images/hero-wellness.png",
+    title: "Personal wellness",
+    alt: "A calm individual meditation and breath-awareness practice",
+  },
+  {
+    src: "/images/corporate-session.png",
+    title: "Wellness at work",
+    alt: "Indian professionals taking part in a workplace movement and breathing session",
+  },
+  {
+    src: "/images/community-wellness.png",
+    title: "Community connection",
+    alt: "A yoga educator guiding mature adults through accessible seated movement",
+  },
+  {
+    src: "/images/education-workshop.png",
+    title: "Learning through practice",
+    alt: "Young adults participating in a mindful movement and wellness workshop",
+  },
+  {
+    src: "/images/corporate-wellness.png",
+    title: "Guided group practice",
+    alt: "Adults following a gentle, guided group wellness practice",
   },
 ] as const;
