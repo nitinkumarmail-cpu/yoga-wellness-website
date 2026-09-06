@@ -7,7 +7,7 @@ export default function Page() {
   return (
     <ContentPage
       eyebrow="Collaborate"
-      title="Cultural & Institutional Engagements"
+      title="Schools & Educational Institutions"
       intro="Well-being as Part of Education"
       blocks={[
         {

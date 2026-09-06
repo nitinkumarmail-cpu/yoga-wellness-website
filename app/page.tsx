@@ -30,10 +30,16 @@ const work = [
     image: "/images/healthcare-guidance.jpeg",
   },
   {
-    title: "Cultural Centres & Educational Institutions",
-    text: "Accessible wellness experiences designed for the places where people learn, gather and connect.",
+    title: "Schools & Educational Institutions",
+    text: "Age-aware wellness experiences for the places where young people learn and grow.",
+    href: "/schools-education-institutions",
+    image: "/images/schools-wellness.jpeg",
+  },
+  {
+    title: "Cultural Centres",
+    text: "Authentic, accessible wellness experiences that encourage cultural exchange and human connection.",
     href: "/cultural-centres",
-    image: "/images/education-yoga.jpeg",
+    image: "/images/cultural-wellness.jpeg",
   },
 ];
 

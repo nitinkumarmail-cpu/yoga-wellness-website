@@ -19,6 +19,10 @@ export default function Page() {
             "Through this work, CFIW hopes to create a space where traditional Indian knowledge meets contemporary well-being, and where wellness becomes a meaningful bridge between people, cultures and ways of living.",
           ],
           quote: "Tradition. Well-being. Cultural Connection.",
+          image: {
+            src: "/images/cultural-wellness.jpeg",
+            alt: "A guided group yoga and wellness practice outdoors",
+          },
         },
       ]}
     />
