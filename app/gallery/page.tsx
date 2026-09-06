@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { CTA, PageHero } from "@/components/ui";
+import { GalleryLightbox } from "@/components/gallery-lightbox";
 import { galleryItems } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -34,18 +34,7 @@ export default function Page() {
             </p>
           </div>
 
-          <div className="gallery-grid">
-            {galleryItems.map((item, index) => (
-              <figure className={"gallery-item gallery-item-" + (index + 1)} key={item.src}>
-                <Image
-                  src={item.src}
-                  alt={item.alt}
-                  fill
-                  sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 40vw"
-                />
-              </figure>
-            ))}
-          </div>
+          <GalleryLightbox items={galleryItems} />
 
           <div className="gallery-contact">
             <div>
