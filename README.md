@@ -26,6 +26,22 @@ docker build -t cfiw-web .
 docker run --rm -p 3000:3000 cfiw-web
 ```
 
+## GoDaddy Node.js Hosting
+
+Connect this GitHub repository and select the `main` branch. GoDaddy installs the
+dependencies and redeploys the selected branch after each push, so no ZIP upload
+is required.
+
+- Node.js: 22
+- Build command: `npm run build`
+- Start command: `npm start`
+
+The `sharp` image dependency is installed explicitly for Next.js image
+optimization. Keep deployment credentials and environment-specific values in the
+GoDaddy dashboard rather than committing them to the repository.
+
+[GoDaddy Node.js Hosting guide](https://www.godaddy.com/resources/ae/skills/godaddy-nodejs-hosting-launch)
+
 Forms validate in the browser and hand the completed message to WhatsApp. The shared adapter in `components/forms.tsx` is the integration point for a later API, CRM, email service or Supabase workflow.
 
 ## Hosted client-review copy
