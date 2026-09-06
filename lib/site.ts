@@ -7,7 +7,7 @@ export const site = {
   url: "https://cfiw-wellness-review.nk2314.chatgpt.site",
   phone: "+91 9650496333",
   whatsapp: "919650496333",
-  email: "hello@cfiw.example",
+  email: "info@cfiw.in",
   location: "New Delhi",
   instagram: "https://instagram.com/",
   instructor: {
