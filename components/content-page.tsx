@@ -1,5 +1,6 @@
 import { PageHero, SectionHeading, CTA } from "./ui";
 import Link from "next/link";
+import Image from "next/image";
 export type Block = {
   id?: string;
   title: string;
@@ -9,6 +10,7 @@ export type Block = {
   items?: readonly string[];
   details?: readonly { title: string; text: string }[];
   link?: { label: string; href: string };
+  image?: { src: string; alt: string };
 };
 export function ContentPage({
   eyebrow,
@@ -16,16 +18,26 @@ export function ContentPage({
   intro,
   blocks,
   cta = true,
+  heroImage,
+  heroImageAlt,
 }: {
   eyebrow: string;
   title: string;
   intro: string;
   blocks: readonly Block[];
   cta?: boolean;
+  heroImage?: string;
+  heroImageAlt?: string;
 }) {
   return (
     <>
-      <PageHero eyebrow={eyebrow} title={title} text={intro} />
+      <PageHero
+        eyebrow={eyebrow}
+        title={title}
+        text={intro}
+        image={heroImage}
+        imageAlt={heroImageAlt}
+      />
       <section className="section">
         <div className="container prose">
           {blocks.map((b, i) => (
@@ -76,6 +88,16 @@ export function ContentPage({
                       <p>{detail.text}</p>
                     </article>
                   ))}
+                </div>
+              )}
+              {b.image && (
+                <div className="content-image">
+                  <Image
+                    src={b.image.src}
+                    alt={b.image.alt}
+                    fill
+                    sizes="(max-width: 800px) 100vw, 900px"
+                  />
                 </div>
               )}
             </section>

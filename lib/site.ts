@@ -129,28 +129,48 @@ export const resources = [
 
 export const galleryItems = [
   {
-    src: "/images/hero-wellness.png",
-    title: "Personal wellness",
-    alt: "A calm individual meditation and breath-awareness practice",
+    src: "/images/gallery-01.jpeg",
+    title: "Clinical wellness guidance",
+    alt: "A wellness professional offering guidance in a hospital ward",
   },
   {
-    src: "/images/corporate-session.png",
-    title: "Wellness at work",
-    alt: "Indian professionals taking part in a workplace movement and breathing session",
+    src: "/images/gallery-02.jpeg",
+    title: "Clinical wellness setting",
+    alt: "Shilpi Shikha in a clinical wellness setting",
   },
   {
-    src: "/images/community-wellness.png",
-    title: "Community connection",
-    alt: "A yoga educator guiding mature adults through accessible seated movement",
+    src: "/images/gallery-03.jpeg",
+    title: "Yoga sports achievement",
+    alt: "Shilpi Shikha with a yoga sports championship certificate",
   },
   {
-    src: "/images/education-workshop.png",
-    title: "Learning through practice",
-    alt: "Young adults participating in a mindful movement and wellness workshop",
+    src: "/images/gallery-04.jpeg",
+    title: "Traditional learning",
+    alt: "A visit to a traditional yoga ashram in Kerala",
   },
   {
-    src: "/images/corporate-wellness.png",
-    title: "Guided group practice",
-    alt: "Adults following a gentle, guided group wellness practice",
+    src: "/images/gallery-05.jpeg",
+    title: "Personal yoga practice",
+    alt: "An individual yoga practice in a historic setting",
+  },
+  {
+    src: "/images/gallery-06.jpeg",
+    title: "Outdoor yoga practice",
+    alt: "Shilpi Shikha practising yoga outdoors in the hills",
+  },
+  {
+    src: "/images/gallery-07.jpeg",
+    title: "Professional yoga studies",
+    alt: "Shilpi Shikha at the Morarji Desai National Institute of Yoga",
+  },
+  {
+    src: "/images/gallery-08.jpeg",
+    title: "Healthcare collaboration",
+    alt: "A wellness professional with a hospital care team",
+  },
+  {
+    src: "/images/gallery-09.jpeg",
+    title: "School wellness session",
+    alt: "Students taking part in a guided outdoor yoga session",
   },
 ] as const;

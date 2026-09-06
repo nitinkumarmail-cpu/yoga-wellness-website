@@ -34,19 +34,36 @@ export function PageHero({
   eyebrow,
   title,
   text,
+  image,
+  imageAlt,
 }: {
   eyebrow: string;
   title: string;
   text: string;
+  image?: string;
+  imageAlt?: string;
 }) {
   return (
-    <section className="page-hero">
-      <div className="container">
-        <p className="eyebrow">{eyebrow}</p>
-        <h1 className="display" style={{ maxWidth: 900 }}>
-          {title}
-        </h1>
-        <p className="lede">{text}</p>
+    <section className={image ? "page-hero page-hero-with-image" : "page-hero"}>
+      <div className={image ? "container page-hero-grid" : "container"}>
+        <div className="page-hero-copy">
+          <p className="eyebrow">{eyebrow}</p>
+          <h1 className="display" style={{ maxWidth: 900 }}>
+            {title}
+          </h1>
+          <p className="lede">{text}</p>
+        </div>
+        {image && (
+          <div className="page-hero-image">
+            <Image
+              src={image}
+              alt={imageAlt ?? ""}
+              fill
+              priority
+              sizes="(max-width: 800px) 100vw, 44vw"
+            />
+          </div>
+        )}
       </div>
     </section>
   );

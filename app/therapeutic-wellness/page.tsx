@@ -12,6 +12,8 @@ export default function Page() {
       eyebrow="Therapeutic Yoga"
       title="Therapeutic Wellness to Restore Health"
       intro="Health needs change over time. At the Centre for Integrative Wellness, Yoga Therapy brings together therapeutic movement, yoga, breathwork, restorative practices and lifestyle-oriented wellness to support each individual according to their health, capacity and stage of life."
+      heroImage="/images/therapeutic-yoga-hero.jpeg"
+      heroImageAlt="A guided therapeutic movement session in a clinical setting"
       blocks={[
         {
           id: "preventive-lifestyle-wellness",

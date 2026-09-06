@@ -12,6 +12,8 @@ export default function Page() {
       eyebrow="Hospitals & Healthcare"
       title="Integrating Yoga & Wellness Into Healthcare"
       intro="Health is shaped not only by clinical treatment, but also by how people move, breathe, recover, manage stress and participate in everyday life."
+      heroImage="/images/healthcare-hero.jpeg"
+      heroImageAlt="A wellness professional speaking with people in a hospital ward"
       blocks={[
         {
           id: "why-yoga-in-healthcare",

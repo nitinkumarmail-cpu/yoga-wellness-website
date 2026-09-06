@@ -12,6 +12,8 @@ export default function Page() {
       eyebrow="Yoga Classes"
       title="Wellness Designed Around You"
       intro="Most people come to us with a simple goal: to get fitter, become more flexible, feel stronger, slow down, or simply feel better in their body."
+      heroImage="/images/yoga-classes-hero.jpeg"
+      heroImageAlt="Shilpi Shikha practising yoga outdoors in a mountain setting"
       blocks={[
         {
           id: "where-your-practice-begins",

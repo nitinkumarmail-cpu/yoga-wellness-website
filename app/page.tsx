@@ -15,24 +15,25 @@ const work = [
     title: "Personal Wellness",
     text: "Personalised pathways that support movement, strength, balance and healthier everyday living.",
     href: "/yoga-classes",
+    image: "/images/personal-yoga.jpeg",
   },
   {
     title: "Corporate Wellness",
     text: "Human, adaptable programmes for healthier people, stronger teams and better workplaces.",
     href: "/corporate-wellness",
-    image: "/images/corporate-wellness.png",
+    image: "/images/corporate-yoga.jpeg",
   },
   {
     title: "Hospitals & Healthcare",
     text: "Responsible yoga and wellness collaborations that complement professional care.",
     href: "/healthcare-wellness",
-    image: "/images/corporate-wellness.png",
+    image: "/images/healthcare-guidance.jpeg",
   },
   {
     title: "Cultural Centres & Educational Institutions",
     text: "Accessible wellness experiences designed for the places where people learn, gather and connect.",
     href: "/cultural-centres",
-    image: "/images/community-wellness.png",
+    image: "/images/education-yoga.jpeg",
   },
 ];
 
@@ -71,8 +72,8 @@ export default function Home() {
           </div>
           <div className="hero-image">
             <Image
-              src="/images/hero-wellness.png"
-              alt="A woman practising a calm seated meditation in natural morning light"
+              src="/images/founder-welcome.jpeg"
+              alt="CFIW founder Shilpi Shikha seated in a welcoming yoga posture"
               fill
               priority
               sizes="(max-width: 800px) 100vw, 48vw"
@@ -128,7 +129,7 @@ export default function Home() {
 
       <section className="editorial band tradition-section">
         <div className="editorial-image">
-          <Image src="/images/hero-wellness.png" alt="Quiet personal meditation practice" fill sizes="50vw" />
+          <Image src="/images/tradition-temple.jpeg" alt="A traditional yoga ashram shrine" fill sizes="50vw" />
         </div>
         <div className="editorial-copy">
           <p className="eyebrow" style={{ color: "#bfd2c3" }}>Our philosophy</p>
@@ -177,15 +178,7 @@ export default function Home() {
       </section>
 
       <section className="section band corporate-home">
-        <div className="container editorial">
-          <div className="editorial-image">
-            <Image
-              src="/images/corporate-session.png"
-              alt="Colleagues taking part in a gentle workplace wellness session"
-              fill
-              sizes="50vw"
-            />
-          </div>
+        <div className="container corporate-home-panel">
           <div className="editorial-copy">
             <p className="eyebrow" style={{ color: "#bfd2c3" }}>Wellness at work</p>
             <h2 className="title corporate-title">Healthier people. Stronger teams. Better workplaces.</h2>
@@ -223,21 +216,16 @@ export default function Home() {
       <section className="section gallery-preview-section rule">
         <div className="container">
           <div className="gallery-preview-heading">
-            <SectionHeading
-              eyebrow="Life at CFIW"
-              title="Explore our wellness gallery"
-              text="A glimpse of personal practice, workplace wellness, community connection and learning through movement."
-            />
+            <h2 className="title">Explore Galleries</h2>
             <Link className="btn btn-primary" href="/gallery">
               View the full gallery <ArrowRight size={15} />
             </Link>
           </div>
           <div className="gallery-preview-grid" style={{ marginTop: 35 }}>
             {galleryItems.slice(0, 4).map((item, index) => (
-              <Link className={`gallery-preview-card gallery-preview-${index + 1}`} href="/gallery" key={item.src}>
+              <div className={`gallery-preview-card gallery-preview-${index + 1}`} key={item.src}>
                 <Image src={item.src} alt={item.alt} fill sizes="(max-width: 700px) 100vw, 50vw" />
-                <span>{item.title}</span>
-              </Link>
+              </div>
             ))}
           </div>
         </div>

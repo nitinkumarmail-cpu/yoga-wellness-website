@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { CTA, PageHero } from "@/components/ui";
 
 export const metadata: Metadata = {
@@ -19,7 +20,15 @@ export default function Page() {
       <section className="section founder-section" id="meet-our-founder">
         <div className="container founder-layout">
           <aside className="founder-profile" aria-label="Founder profile">
-            <span className="founder-monogram" aria-hidden="true">SS</span>
+            <div className="founder-photo">
+              <Image
+                src="/images/founder-clinical.jpeg"
+                alt="Shilpi Shikha in a professional clinical wellness setting"
+                fill
+                priority
+                sizes="(max-width: 1050px) 100vw, 360px"
+              />
+            </div>
             <p className="eyebrow">Founder</p>
             <h2>Shilpi Shikha</h2>
             <p>Centre for Integrative Wellness</p>

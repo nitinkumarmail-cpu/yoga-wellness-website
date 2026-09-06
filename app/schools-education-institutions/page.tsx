@@ -21,6 +21,10 @@ export default function Page() {
             "At CFIW, we believe that alongside preparing young people for their future, education can also give them something fundamental.",
           ],
           quote: "The understanding of how to take care of themselves.",
+          image: {
+            src: "/images/schools-wellness.jpeg",
+            alt: "Schoolchildren taking part in a guided outdoor yoga and wellness session",
+          },
         },
       ]}
     />
