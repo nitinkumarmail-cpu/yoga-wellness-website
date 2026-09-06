@@ -39,7 +39,7 @@ const work = [
     title: "Cultural Centres",
     text: "Authentic, accessible wellness experiences that encourage cultural exchange and human connection.",
     href: "/cultural-centres",
-    image: "/images/cultural-wellness.jpeg",
+    image: "/images/cultural-centres-card.jpeg",
   },
 ];
 
@@ -165,14 +165,6 @@ export default function Home() {
               <Link className="btn btn-accent" href="/yoga-classes">
                 Explore personal wellness <ArrowRight size={15} />
               </Link>
-            </div>
-            <div className="editorial-image">
-              <Image
-                src="/images/corporate-wellness.png"
-                alt="A wellness guide leading an accessible group practice"
-                fill
-                sizes="50vw"
-              />
             </div>
           </div>
           <div className="grid3 personal-benefits">

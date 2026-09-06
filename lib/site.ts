@@ -129,6 +129,16 @@ export const resources = [
 
 export const galleryItems = [
   {
+    src: "/images/gallery-10.jpeg",
+    title: "Guided group wellness practice",
+    alt: "A yoga instructor guiding participants through an outdoor group practice",
+  },
+  {
+    src: "/images/gallery-11.jpeg",
+    title: "Healthcare wellness outreach",
+    alt: "A wellness professional speaking with patients and staff in a hospital ward",
+  },
+  {
     src: "/images/gallery-01.jpeg",
     title: "Clinical wellness guidance",
     alt: "A wellness professional offering guidance in a hospital ward",
