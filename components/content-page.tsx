@@ -62,8 +62,11 @@ export function ContentPage({
               />
               {b.quote && <blockquote className="section-quote">{b.quote}</blockquote>}
               {b.paragraphs?.map((paragraph) => (
-                <p className="content-paragraph" key={paragraph}>
-                  {b.highlights?.includes(paragraph) ? <mark className="copy-highlight">{paragraph}</mark> : paragraph}
+                <p
+                  className={`content-paragraph${b.highlights?.includes(paragraph) ? " content-emphasis" : ""}`}
+                  key={paragraph}
+                >
+                  {b.highlights?.includes(paragraph) ? <strong>{paragraph}</strong> : paragraph}
                 </p>
               ))}
               {b.link && (
