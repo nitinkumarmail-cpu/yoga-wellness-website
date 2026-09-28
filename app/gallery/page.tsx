@@ -27,11 +27,6 @@ export default function Page() {
               <p className="eyebrow">CFIW wellness gallery</p>
               <h2 className="title">Creating health, together</h2>
             </div>
-            <p className="lede">
-              Our programmes are shaped around people and place. This gallery
-              offers a glimpse of the calm, inclusive and practical experiences
-              we seek to create.
-            </p>
           </div>
 
           <GalleryLightbox items={galleryItems} />

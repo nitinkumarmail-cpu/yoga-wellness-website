@@ -11,18 +11,18 @@ export default function Page() {
     <ContentPage
       eyebrow="Hospitals & Healthcare"
       title="Integrating Yoga & Wellness Into Healthcare"
-      intro="Health is shaped not only by clinical treatment, but also by how people move, breathe, recover, manage stress and participate in everyday life."
+      intro="Bringing together the therapeutic principles of Yoga with contemporary health science to support a more integrated, person-centred approach to health and well-being."
       heroImage="/images/healthcare-hero.jpeg"
       heroImageAlt="A wellness professional speaking with people in a hospital ward"
       blocks={[
         {
           id: "why-yoga-in-healthcare",
-          title: "Why Yoga in Healthcare?",
-          text: "Yoga, when appropriately adapted and delivered within professional and clinical boundaries, can provide a complementary approach to health and well-being through movement, breathing, relaxation, mindfulness and lifestyle practices.",
+          title: "Integration of Yoga in Healthcare",
+          text: "Yoga has an evolving role within contemporary health and well-being. When appropriately adapted and delivered within professional boundaries, its use of movement, breathing, relaxation and mindfulness can complement conventional approaches to care.",
           paragraphs: [
-            "The World Health Organization recognises yoga within the wider field of traditional, complementary and integrative medicine. Its current strategy supports evidence-based, safe and effective integration into health systems.",
-            "WHO has also highlighted growing clinical evidence around yoga, including benefits related to stress, strength and flexibility, while emphasising appropriate evidence, quality and safety.",
-            "At CFIW, collaboration is central to our approach. We work with hospitals, doctors, rehabilitation professionals and allied healthcare teams to develop yoga and wellness programmes that complement, not replace, conventional medical care.",
+            "The World Health Organization (WHO) includes Yoga within the broader field of traditional, complementary and integrative medicine. Growing scientific research around Yoga is informing the evidence-based, safe and effective integration of appropriate traditional and complementary practices into health systems.",
+            "At CFIW, this principle of integration is central to our work. We seek to bring together traditional Yogic knowledge and contemporary health understanding, while working collaboratively with doctors, hospitals, rehabilitation professionals and allied healthcare teams where appropriate.",
+            "Yoga is not replacing conventional medical care, but complementing it while bringing the right practices together around the needs of the individual.",
           ],
           link: {
             label: "WHO: Traditional, Complementary and Integrative Medicine",
@@ -35,6 +35,7 @@ export default function Page() {
           quote: "Supporting the Person Beyond the Diagnosis",
           text: "CFIW collaborates with healthcare professionals to develop therapeutic and preventive yoga programmes based on the patient's medical context, functional capacity and stage of recovery.",
           details: [
+            { title: "Psychiatry, Psychology & Mental Health", text: "Supporting stress, anxiety, emotional well-being, sleep and mind-body health through an integrative approach." },
             { title: "Orthopaedics & Musculoskeletal Health", text: "Neck and back concerns, joint and knee health, mobility, posture and functional movement." },
             { title: "Pulmonology & Respiratory Health", text: "Breath awareness, therapeutic movement, respiratory wellness and pulmonary rehabilitation support." },
             { title: "Endocrinology & Metabolic Health", text: "Type 2 diabetes, thyroid wellness, weight management and lifestyle modification." },

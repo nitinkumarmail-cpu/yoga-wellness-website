@@ -125,6 +125,35 @@
 .founder-philosophy h2,.founder-vision h2{margin:.55rem 0 1.1rem;color:var(--ink);font-size:clamp(2rem,3.5vw,3.6rem);line-height:1.05}
 .founder-signoff{color:var(--green)!important;font-family:var(--font-serif);font-size:1.6rem;font-weight:700}
 
+/* September review: complete photographs and clearer content hierarchy. */
+.copy-highlight{background:#fff0ac;color:var(--ink);padding:.12em .18em;box-decoration-break:clone;-webkit-box-decoration-break:clone;font-weight:600}
+.hero-image img{object-fit:contain;background:#fff8ed}
+.hero-image:after{display:none}
+.work-grid .card:nth-child(3) .image-wrap{background:#f0ece5}
+.work-grid .card:nth-child(3) .image-wrap img{object-fit:contain}
+.personal-feature-top{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.personal-feature-top .title{white-space:normal}
+.personal-feature-top .editorial-copy{padding:40px}
+.personal-feature-top .editorial-image{min-height:410px}
+.corporate-home-panel{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.corporate-home-panel .editorial-image{min-height:440px;border-radius:24px;overflow:hidden}
+.corporate-home-panel .editorial-copy{padding:20px 0}
+.corporate-title{font-size:clamp(2rem,3.2vw,3.7rem)}
+#how-we-practise .detail-grid{gap:22px}
+#how-we-practise .detail-card{padding:32px;border-top:4px solid var(--green);border-radius:20px;background:linear-gradient(145deg,#fffdf5,#edf4df)}
+#how-we-practise .detail-card h3{font-size:1.7rem;margin-bottom:16px}
+.founder-introduction{background:linear-gradient(180deg,#fff7dc,var(--paper))}
+.founder-intro-copy{max-width:920px}
+.founder-intro-copy .lede{max-width:800px}
+.founder-new-portrait{max-width:600px;margin:36px auto;background:#eee9df;border-radius:24px;overflow:hidden}
+.founder-new-portrait img{display:block;width:100%;height:auto;object-fit:contain}
+.founder-journey{padding-top:12px}
+.profile-file-note{font-size:.85rem;color:var(--muted);margin-top:12px}
+.gallery-preview-grid.gallery-preview-pair{grid-template-columns:1fr 1fr;grid-template-rows:440px}
+.gallery-preview-pair img{object-fit:contain;background:var(--sand)}
+@media(max-width:560px){.gallery-preview-grid.gallery-preview-pair{grid-template-columns:1fr;grid-template-rows:repeat(2,340px)}}
+@media(max-width:800px){.personal-feature-top,.corporate-home-panel{grid-template-columns:1fr}.personal-feature-top .editorial-copy{padding:28px}.corporate-home-panel{gap:24px}.personal-feature-top .editorial-image,.corporate-home-panel .editorial-image{min-height:300px}.founder-intro-copy .display{overflow-wrap:anywhere}}
+
 @media(max-width:1050px){.menu-btn{display:flex}.gallery-preview-grid{grid-template-columns:1fr 1fr;grid-template-rows:300px 300px}.founder-layout{grid-template-columns:1fr}.founder-profile{position:static}.founder-profile dl{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:800px){.page-hero-with-image{padding:36px 0 52px}.page-hero-grid{grid-template-columns:1fr}.page-hero-image{min-height:390px;grid-row:1}.content-image{min-height:440px}.personal-feature .title{white-space:normal}.gallery-preview-heading,.gallery-contact{display:grid;align-items:start}.gallery-preview-grid{grid-template-columns:1fr 1fr;grid-template-rows:240px 240px}.gallery-intro{grid-template-columns:1fr;gap:10px}.gallery-grid{grid-template-columns:1fr 1fr}.founder-profile dl{grid-template-columns:1fr}}
 @media(max-width:560px){body{padding-bottom:78px}.mobile-menu{height:calc(100dvh - 68px);padding-inline:18px}.page-hero-image{min-height:320px;border-radius:20px}.content-image{min-height:320px;border-radius:18px}.gallery-preview-grid{grid-template-columns:1fr;grid-template-rows:repeat(4,240px)}.gallery-grid{grid-template-columns:1fr;gap:14px}.gallery-thumbnail{border-radius:16px}.gallery-thumbnail-hint{display:none}.gallery-lightbox{inset:2vh 8px}.gallery-lightbox-control{width:46px;height:46px}.gallery-lightbox-previous{left:5px}.gallery-lightbox-next{right:5px}.gallery-lightbox-close{right:5px;top:5px}.gallery-contact{padding:28px 24px}.founder-profile{padding:18px 24px 28px}.founder-photo{min-height:390px;margin:0 -10px 24px}.founder-story{font-size:1rem}.founder-story blockquote{margin:30px 0;padding:22px 24px}}

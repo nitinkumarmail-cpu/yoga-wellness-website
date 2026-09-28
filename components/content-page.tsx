@@ -6,6 +6,7 @@ export type Block = {
   title: string;
   text?: string;
   paragraphs?: readonly string[];
+  highlights?: readonly string[];
   quote?: string;
   items?: readonly string[];
   details?: readonly { title: string; text: string }[];
@@ -56,14 +57,13 @@ export function ContentPage({
               }}
             >
               <SectionHeading
-                eyebrow={String(i + 1).padStart(2, "0")}
                 title={b.title}
                 text={b.text}
               />
               {b.quote && <blockquote className="section-quote">{b.quote}</blockquote>}
               {b.paragraphs?.map((paragraph) => (
                 <p className="content-paragraph" key={paragraph}>
-                  {paragraph}
+                  {b.highlights?.includes(paragraph) ? <mark className="copy-highlight">{paragraph}</mark> : paragraph}
                 </p>
               ))}
               {b.link && (

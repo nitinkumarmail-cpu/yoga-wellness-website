@@ -28,7 +28,7 @@ export default function Page() {
           },
         ]}
       />
-      <section className="section" style={{ background: "var(--sage)" }}>
+      <section id="corporate-enquiry" className="section" style={{ background: "var(--sage)" }}>
         <div className="container" style={{ maxWidth: 820 }}>
           <h2 className="title">Discuss a partnership</h2>
           <EnquiryForm kind="corporate" />

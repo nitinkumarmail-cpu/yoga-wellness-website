@@ -11,23 +11,18 @@ export default function Page() {
     <ContentPage
       eyebrow="Yoga Classes"
       title="Wellness Designed Around You"
-      intro="Most people come to us with a simple goal: to get fitter, become more flexible, feel stronger, slow down, or simply feel better in their body."
+      intro="We listen to your goals and take the time to understand how you move, breathe, recover and live, then design a practice around your needs and the goals you want to achieve."
       heroImage="/images/yoga-classes-hero.jpeg"
       heroImageAlt="Shilpi Shikha practising yoga outdoors in a mountain setting"
       blocks={[
         {
-          id: "where-your-practice-begins",
-          title: "Where Your Practice Begins",
-          text: "We listen to that goal, but we do not stop there. At CFIW, we take time to understand how you move, how you breathe, how you recover and what your everyday life looks like.",
-          paragraphs: ["Your body does not exist separately from your work, sleep, stress, habits, age or lifestyle. That is where your practice begins."],
-        },
-        {
           id: "why-cfiw",
-          title: "Why CFIW",
-          text: "What you want and what your body needs may not always be the same thing.",
+          title: "Why Choose Us",
+          text: "Because your goal is only the starting point.",
           paragraphs: [
-            "You may come to us wanting more flexibility, while what you actually need is greater stability. You may want to become fitter, but years of sitting may have already changed the way your body moves. You may simply feel tired, stiff or disconnected from a body that once felt very different.",
-            "There is no standard prescription. We understand where you are first, and then decide how we can help you move forward.",
+            "You may come to us wanting to become fitter, improve flexibility, build strength or simply feel better in your body. Sometimes, the desire for more flexibility may actually call for greater strength and stability. Stiffness may not be about flexibility alone; it may be influenced by how you move, sit, breathe, work, rest and recover.",
+            "That is why, at CFIW, we don’t begin with a standard routine. We begin by understanding you: where you are today, how your body functions and where you want to go.",
+            "From there, we design a practice around you, one that responds to your needs and evolves with your progress.",
           ],
           items: ["Listen", "Assess", "Personalise", "Practise", "Progress"],
         },
@@ -49,8 +44,7 @@ export default function Page() {
         },
         {
           id: "how-we-practise",
-          title: "How We Practise",
-          text: "Traditional foundations. Personal application. The practice can change as you change.",
+          title: "Classes We Offer",
           details: [
             { title: "Classical Hatha Yoga", text: "A traditional, structured practice bringing together asana, breath and awareness." },
             { title: "Dynamic Yoga & Flow", text: "A more active practice with emphasis on movement, strength, mobility and endurance." },
@@ -69,15 +63,6 @@ export default function Page() {
             { title: "Online Wellness", text: "So travel, work or geography does not have to interrupt your practice." },
           ],
           paragraphs: ["We work with men and women across different ages and stages of life, from busy professionals and people returning to movement to families and individuals thinking seriously about how they want to age."],
-        },
-        {
-          id: "the-cfiw-difference",
-          title: "The CFIW Difference",
-          text: "We do not start by asking, ‘Which yoga style would you like?’ We start with, ‘Tell us about you.’",
-          paragraphs: [
-            "Where are you today? How does your body feel? What does your everyday life demand from you? Where would you like to be?",
-            "Then we build the practice around those answers. Our aim is to help you live better in your body.",
-          ],
         },
       ]}
     />

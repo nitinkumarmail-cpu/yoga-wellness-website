@@ -110,7 +110,6 @@ export function Header() {
                     {item.label} overview
                   </Link>
                   {item.children
-                    .filter(([, href]) => href !== item.href)
                     .map(([label, href]) => (
                       <Link
                         onClick={closeMenu}

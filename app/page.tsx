@@ -19,25 +19,25 @@ const work = [
   },
   {
     title: "Corporate Wellness",
-    text: "Human, adaptable programmes for healthier people, stronger teams and better workplaces.",
+    text: "A whole-person approach to workplace well-being, integrating movement, mental well-being, lifestyle and sustainable health.",
     href: "/corporate-wellness",
-    image: "/images/corporate-yoga.jpeg",
+    image: "/images/corporate-wellness-ai.webp",
   },
   {
     title: "Hospitals & Healthcare",
-    text: "Responsible yoga and wellness collaborations that complement professional care.",
+    text: "Bringing therapeutic Yoga and integrative wellness into healthcare as complementary support for patients and care teams.",
     href: "/healthcare-wellness",
-    image: "/images/healthcare-guidance.jpeg",
+    image: "/images/healthcare-sep27.jpeg",
   },
   {
     title: "Schools & Educational Institutions",
-    text: "Age-aware wellness experiences for the places where young people learn and grow.",
+    text: "Creating healthier foundations for life through movement, mindfulness and meaningful well-being education.",
     href: "/schools-education-institutions",
     image: "/images/schools-wellness.jpeg",
   },
   {
     title: "Cultural Centres",
-    text: "Authentic, accessible wellness experiences that encourage cultural exchange and human connection.",
+    text: "Bringing people together through Yoga, well-being and shared cultural experiences that foster connection and exchange.",
     href: "/cultural-centres",
     image: "/images/cultural-centres-card.jpeg",
   },
@@ -78,7 +78,7 @@ export default function Home() {
           </div>
           <div className="hero-image">
             <Image
-              src="/images/founder-welcome.jpeg"
+              src="/images/founder-welcome-sep27.jpeg"
               alt="CFIW founder Shilpi Shikha seated in a welcoming yoga posture"
               fill
               priority
@@ -124,7 +124,6 @@ export default function Home() {
               ["05", "Create Health", "Build awareness and habits for lifelong well-being."],
             ].map(([number, title, text]) => (
               <div className="step" key={number}>
-                <b>{number}</b>
                 <h3>{title}</h3>
                 <p className="lede" style={{ fontSize: ".92rem" }}>{text}</p>
               </div>
@@ -154,13 +153,12 @@ export default function Home() {
       <section className="section personal-feature">
         <div className="container">
           <div className="editorial personal-feature-top">
+            <div className="editorial-image"><Image src="/images/personal-yoga-ai.webp" alt="Illustration of an instructor guiding an individual yoga session" fill sizes="(max-width: 800px) 100vw, 50vw" /></div>
             <div className="editorial-copy">
               <p className="eyebrow">Personal Wellness</p>
-              <h2 className="title">Personalised Attention. Thoughtful Guidance.</h2>
+              <h2 className="title">Personalised Attention. Designed Around You.</h2>
               <p className="lede">
-                CFIW&apos;s teaching is built on listening first, understanding your
-                context before shaping a practice that feels useful, sustainable
-                and genuinely yours.
+                We begin by understanding how you move, breathe, live and what you want to achieve, then shape a practice that evolves with your body, lifestyle and goals.
               </p>
               <Link className="btn btn-accent" href="/yoga-classes">
                 Explore personal wellness <ArrowRight size={15} />
@@ -177,6 +175,7 @@ export default function Home() {
 
       <section className="section band corporate-home">
         <div className="container corporate-home-panel">
+          <div className="editorial-image"><Image src="/images/corporate-wellness-ai.webp" alt="Illustration of colleagues taking part in a guided workplace wellness session" fill sizes="(max-width: 800px) 100vw, 50vw" /></div>
           <div className="editorial-copy">
             <p className="eyebrow" style={{ color: "#bfd2c3" }}>Wellness at work</p>
             <h2 className="title corporate-title">Healthier people. Stronger teams. Better workplaces.</h2>
@@ -219,8 +218,8 @@ export default function Home() {
               View the full gallery <ArrowRight size={15} />
             </Link>
           </div>
-          <div className="gallery-preview-grid" style={{ marginTop: 35 }}>
-            {galleryItems.slice(0, 4).map((item, index) => (
+          <div className="gallery-preview-grid gallery-preview-pair" style={{ marginTop: 35 }}>
+            {galleryItems.slice(0, 2).map((item, index) => (
               <div className={`gallery-preview-card gallery-preview-${index + 1}`} key={item.src}>
                 <Image src={item.src} alt={item.alt} fill sizes="(max-width: 700px) 100vw, 50vw" />
               </div>

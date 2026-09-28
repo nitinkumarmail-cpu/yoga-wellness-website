@@ -24,8 +24,8 @@ export const nav = [
     children: [
       ["Who We Are", "/what-is-cfiw#who-we-are"],
       ["Why CFIW", "/what-is-cfiw#why-cfiw"],
-      ["Our Philosophy", "/our-work#our-philosophy"],
-      ["Our Approach", "/our-work#our-approach"],
+      ["What is Integrative Wellness?", "/what-is-cfiw#what-is-integrative-wellness"],
+      ["What is Salutogenesis?", "/what-is-cfiw#what-is-salutogenesis"],
     ],
   },
   {
@@ -57,7 +57,6 @@ export const nav = [
       ["Hospitals & Healthcare", "/healthcare-wellness"],
       ["Schools & Educational Institutions", "/schools-education-institutions"],
       ["Cultural Centres", "/cultural-centres"],
-      ["Flagship Initiative", "/flagship-initiatives/project-saanidhya"],
     ],
   },
   {
@@ -78,9 +77,8 @@ export const nav = [
     label: "Contact",
     href: "/contact",
     children: [
-      ["Get in Touch", "/contact"],
       ["Book a Session", "/book"],
-      ["Corporate Enquiry", "/contact#send-an-enquiry"],
+      ["Corporate Enquiry", "/collaborate#corporate-enquiry"],
     ],
   },
 ] as const;
@@ -129,24 +127,14 @@ export const resources = [
 
 export const galleryItems = [
   {
-    src: "/images/gallery-10.jpeg",
-    title: "Guided group wellness practice",
-    alt: "A yoga instructor guiding participants through an outdoor group practice",
+    src: "/images/community-practice-sep27.jpeg",
+    title: "Outdoor group yoga practice",
+    alt: "Participants practising yoga together beneath a large tree",
   },
   {
-    src: "/images/gallery-11.jpeg",
-    title: "Healthcare wellness outreach",
-    alt: "A wellness professional speaking with patients and staff in a hospital ward",
-  },
-  {
-    src: "/images/gallery-01.jpeg",
-    title: "Clinical wellness guidance",
-    alt: "A wellness professional offering guidance in a hospital ward",
-  },
-  {
-    src: "/images/gallery-02.jpeg",
-    title: "Clinical wellness setting",
-    alt: "Shilpi Shikha in a clinical wellness setting",
+    src: "/images/clinical-support-sep27.jpeg",
+    title: "Personal clinical wellness support",
+    alt: "A wellness professional supporting a participant during a clinical session",
   },
   {
     src: "/images/gallery-03.jpeg",

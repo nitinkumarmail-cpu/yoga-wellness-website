@@ -10,7 +10,7 @@ export default function Page() {
       <PageHero
         eyebrow="Contact CFIW"
         title="Begin with a conversation"
-        text="Ask a question, explore a personal session or tell us about an organisation you would like to support."
+        text=""
       />
       <section className="section">
         <div className="container contact-grid">

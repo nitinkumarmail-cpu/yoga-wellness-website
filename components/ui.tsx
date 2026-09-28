@@ -51,7 +51,7 @@ export function PageHero({
           <h1 className="display" style={{ maxWidth: 900 }}>
             {title}
           </h1>
-          <p className="lede">{text}</p>
+          {text && <p className="lede">{text}</p>}
         </div>
         {image && (
           <div className="page-hero-image">

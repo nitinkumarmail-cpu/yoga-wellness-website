@@ -33,7 +33,7 @@ const cols = [
     l: [
       ["Founder", "/founder#meet-our-founder"],
       ["Workshops", "/events"],
-      ["Contact Us", `tel:${site.phone.replace(/\s/g, "")}`],
+      ["Corporate Enquiry", "/collaborate#corporate-enquiry"],
     ],
   },
 ];
