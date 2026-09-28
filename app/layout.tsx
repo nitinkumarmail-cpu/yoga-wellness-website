@@ -26,14 +26,16 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${site.fullName} | Creating Health. Living Better.`,
     description: site.description,
+    siteName: site.fullName,
+    locale: "en_IN",
     type: "website",
-    images: [{ url: "/og.png", width: 1200, height: 630, alt: "CFIW, Creating Health. Living Better." }],
+    images: [{ url: site.sharingImage, width: 1200, height: 630, type: "image/jpeg", alt: "Centre for Integrative Wellness. Creating Health. Living Better. Founder Shilpi Shikha Borah." }],
   },
   twitter: {
     card: "summary_large_image",
     title: `${site.fullName} | Creating Health. Living Better.`,
     description: site.description,
-    images: ["/og.png"],
+    images: [site.sharingImage],
   },
   robots: { index: true, follow: true },
 };

@@ -3,8 +3,9 @@ export const site = {
   fullName: "Centre for Integrative Wellness",
   tagline: "Creating health. Living better.",
   description:
-    "Personalised yoga, mindful movement, breathwork and integrative wellness for individuals and organisations.",
-  url: "https://cfiw-wellness-review.nk2314.chatgpt.site",
+    "Welcome to the Centre for Integrative Wellness. We believe health should be actively cultivated through personalised Yoga and integrative wellness.",
+  url: "https://www.cfiw.in",
+  sharingImage: "/images/cfiw-share-2026-09.jpg",
   phone: "+91 9650496333",
   whatsapp: "919650496333",
   email: "info@cfiw.in",
